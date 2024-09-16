@@ -2,7 +2,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     width: 100vw;
     background: radial-gradient(
     22.43% 43.85% at 1.22% 52.45%,
@@ -11,33 +10,125 @@ section {
   );
 }
 
-.about-me-container {
-    width: 80%;
+.skill-container {
+    max-width: 1440px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 10px;
+    color: aliceblue;
+    gap: 32px;
 }
 
-.profile-img-container {
-    width: 50%;   
-}
 
-.about-me-text-container {
+
+.left-container {
     width: 50%;
     color: aliceblue;
     font-family: sans-serif;
+    margin-bottom: 150px;
 
-    .about-me-text {
+    .skill-text {
         background-color: #1f2e2b82;
-        padding: 60px 30px;
+        padding: 40px 20px;
         border-radius: 32px;
         border: 1px solid #3dcfb6;
     }
 
     .text-container {
         display: flex;
-        gap: 10px;
-        
+        gap: 10px;   
+    }
+
+    h1 {
+        font-size: 70px;
+        margin-top: 0px;
+        color: #3bcfb6;
+    }
+
+    h2 {
+        font-weight: 100;
+        color: #3bcfb6;
     }
 }
+
+.right-container {
+    flex-wrap: wrap;
+    width: 60%;
+    display: flex;
+    gap: 32px;
+    text-align: center;
+    font-family: sans-serif;
+
+    img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-container {
+        width: 65px;
+        height: 80px;
+        margin-top: 75px;
+        margin-left: 65px;
+    }
+
+    p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 24px 10px 24px;
+    gap: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center; 
+    
+    .text {
+      display: inline-block;
+      white-space: nowrap;
+      position: relative;
+      transform: translateX(0); 
+      transition: none;
+    }
+  
+    &:hover .text {
+      animation: marquee-hover 5s linear infinite;
+      color: #3dcfb6;
+    }
+  
+    &:hover {
+      border-color: #3dcfb6;
+    }
+  }
+  
+  @keyframes marquee-hover {
+    0% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(-120%); 
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(100%); 
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+
+
+
