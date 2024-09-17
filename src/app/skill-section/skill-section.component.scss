@@ -3,6 +3,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    max-width: 100%;
     background: radial-gradient(
     22.43% 43.85% at 1.22% 52.45%,
     rgba(8, 70, 59, 0.9) 1%,
@@ -16,7 +17,7 @@ section {
     align-items: flex-start;
     justify-content: center;
     color: aliceblue;
-    gap: 32px;
+    gap: 20px;
 }
 
 
@@ -29,25 +30,32 @@ section {
 
     .skill-text {
         background-color: #1f2e2b82;
-        padding: 40px 20px;
+        padding: 45px 30px;
         border-radius: 32px;
         border: 1px solid #3dcfb6;
     }
 
     .text-container {
         display: flex;
-        gap: 10px;   
+        gap: 10px;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
     }
 
     h1 {
         font-size: 70px;
         margin-top: 0px;
         color: #3bcfb6;
+        font-family: 'Fira Code', sans-serif;
+        font-weight: 700;
     }
 
     h2 {
-        font-weight: 100;
+        font-weight: 700;
         color: #3bcfb6;
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 }
 
@@ -62,13 +70,20 @@ section {
     img {
         width: 65px;
         height: 65px;
+        margin-bottom: 15px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
 
     .icon-container {
         width: 65px;
         height: 80px;
-        margin-top: 75px;
+        margin-top: 50px;
         margin-left: 65px;
+        margin-bottom: 15px;
     }
 
     p {

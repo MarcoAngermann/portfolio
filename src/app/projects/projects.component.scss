@@ -1,0 +1,129 @@
+section {
+    display: flex;
+    background-color: #1c1c1c;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    position: relative;
+}
+
+.test {
+    width: 70%;
+}
+
+.projects-container {
+    position: relative;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    width: 100%;
+    margin-bottom: 50px;
+
+    .projects-title {
+        padding-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    h3 {
+        color: #3bcfb6;
+        font-size: 24px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 70px;
+        margin-top: 0px;
+        color: #3bcfb6;
+        font-family: 'Fira Code', sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        color: #D9D9D9;
+        font-weight: 400;
+    }
+}
+
+.projects{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: #D9D9D9;
+    padding: 40px;
+    transition: background-color 0.5s ease;
+
+    h2 {
+        position: relative;
+        font-size: 24px;
+        font-family: 'Fira Code', sans-serif;
+        font-weight: 700;
+    }
+
+    span {
+        color: #3bcfb6;
+    }
+}
+
+.projects:hover {
+    cursor: pointer;
+    background-color: #2fa894;
+}
+
+.seperator {
+    width: 100%;
+    height: 1px;
+    background-color: #3dcfb6;
+}
+
+.projects:hover h2::after {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/img/arrow.svg'); 
+    background-size: contain; /* Ensure the image fits well */
+    background-repeat: no-repeat;
+    width: 20px;  /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    top: 50%;
+    left: 100%; /* Position the image to the right of the text */
+    transform: translateY(-50%); /* Center the image vertically */
+    z-index: 0; /* Ensure it stays behind the text */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    opacity: 0; /* Initially hidden */
+}
+  
+  .projects:hover h2::after {
+    opacity: 1; /* Show the image on hover */
+}
+
+.projects-img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -360px;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-image: var(--hovered-image); /* Das bleibt gleich */
+}
+
+.projects:hover::after {
+    opacity: 1;
+}

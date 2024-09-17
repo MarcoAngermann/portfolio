@@ -4,19 +4,37 @@ section {
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
+    max-width: 100%;
     background: #1c1c1c;
 }
 
 .about-me-container {
+    position: relative;
     max-width: 1440px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    z-index: 5;
 
     h2 {
-        font-weight: 100;
+        font-weight: 700;
         color: #3bcfb6;;
         margin-top: 150px;
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        position: absolute;
+        z-index: 5;
+    }
+
+    .profile-lines {
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+        top: 20px;
     }
 
 }
@@ -32,9 +50,11 @@ section {
 
     .about-me-text {
         background-color: #1f2e2bd4;
-        padding: 40px 20px;
+        padding: 45px 30px;
         border-radius: 32px;
         border: 1px solid #3dcfb6;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
     }
 
     .text-container {
@@ -46,6 +66,8 @@ section {
         font-size: 70px;
         margin-top: 0px;
         color: #3bcfb6;
+        font-family: 'Fira Code', sans-serif;
+        font-weight: 700;
     }
 }
 
