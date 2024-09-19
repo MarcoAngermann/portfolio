@@ -71,3 +71,25 @@ section {
     }
 }
 
+
+@media (max-width: 1250px) {
+    
+    .about-me-container {
+        position: static;
+        background: #1c1c1c;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .profile-lines {
+            position: static;
+            
+        }
+
+        .about-me-text-container {
+            width: 50%;
+        }
+    }
+}

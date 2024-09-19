@@ -181,6 +181,10 @@ section {
     }
   }
 
+  .mail-icon {
+    display: none;
+  }
+
   .seperator-container-right {
     position: absolute;
     right: 0;
@@ -312,3 +316,78 @@ section {
     from { max-width: 0; }
     to { max-width: 100%; }
   }
+
+  @media (max-width: 1220px) {
+    .above-me-container h1{
+      font-size: 96px;
+    }
+  }
+
+@media (max-width: 1460px) {
+  .seperator-container-left {
+    padding-left: 20px;
+  }
+
+  .seperator-container-right {
+    padding-right: 20px;
+  }
+}
+
+  @media (max-width: 950px) {
+    .above-me-container h1{
+      font-size: 72px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .above-me-container h1{
+      font-size: 64px;
+    }
+
+    .above-me-container h2{
+      font-size: 24px;
+    }
+
+    .button-container {
+      gap: 32px;
+    }
+
+    .mail {
+      display: none;
+    }
+
+    .mail-icon {
+      display: block;
+    }
+  }
+
+  @media (max-width: 580px) {
+    .above-me-container h1{
+      font-size: 56px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .above-me-container h1{
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .above-me-container h1{
+      font-size: 34px;
+    }
+
+    .above-me-container h2{
+      font-size: 20px;
+    }
+
+    .button-container {
+      gap: 20px;
+      
+      .btn {
+        font-size: 14px;
+      }
+    }
+  }
+

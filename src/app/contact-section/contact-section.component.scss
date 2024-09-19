@@ -1,0 +1,197 @@
+section {
+    display: flex;
+    background-color: #1c1c1c;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 10px;
+    padding: 150px 0;
+    max-width: 1440px;
+    justify-content: space-between;
+    width: 100%;
+
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            font-family: 'Fira Code', sans-serif;
+            color: #3DCFB6;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Karla', sans-serif;
+            color: #3DCFB6;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Karla', sans-serif;
+            color: #ffffff;
+        }
+    }
+
+    span {
+        color: #3DCFB6;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #ffffff;
+}
+
+.right-container {
+    width: 50%;
+}
+
+.top-side {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 32px 16px;
+    border-top: 1px solid #3dcfb6;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    input,
+    textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid transparent;
+      outline: none;
+      resize: none;
+      &:hover {
+        border-bottom: 1px solid #3dcfb6;
+      }
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-bottom: 1px solid #3dcfb6;
+    }
+  }
+  
+  .send-contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    a {
+      color: #3dcfb6;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+    
+  }
+  
+  .checkbox {
+    cursor: pointer;
+    appearance: none;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #3dcfb6;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: transparent;
+    position: relative;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 4px;
+      height: 7px;
+      border: solid #1c1c1c;
+      border-width: 0 2px 2px 0;
+      transform: translate(-50%, -50%) rotate(45deg) scale(0);
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    &:checked::before {
+      transform: translate(-50%, -60%) rotate(45deg) scale(1);
+    }
+  
+    &:hover {
+      box-shadow: 0px 0px 6px 3px rgba(61, 207, 183, 1);
+      animation: fly-around 1s infinite ease-in-out;
+    }
+  
+    &:active {
+      background-color: #3dcfb6; /* Hintergrundfarbe bei Klick */
+      transform: scale(0.95); /* Verkleinert die Checkbox leicht beim Klicken */
+    }
+  
+    &:checked {
+      background-color: #3dcfb6; /* Hintergrundfarbe im Checked-Zustand */
+      box-shadow: 0px 0px 6px 3px rgba(61, 207, 183, 1);
+    }
+  }
+  
+  /* Keyframes für die Animation */
+  @keyframes fly-around {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(-2px, -2px) rotate(-5deg) scale(1.02);
+    }
+    50% {
+      transform: translate(2px, -3px) rotate(5deg) scale(0.98);
+    }
+    75% {
+      transform: translate(-1px, 2px) rotate(2.5deg) scale(1.01);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  }
+  
+  .bottom-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-top: 1px solid #3dcfb6;
+  
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    button {
+      border: 1px solid white;
+      border-radius: 100px;
+      color: white;
+      background: transparent;
+      cursor: pointer;
+      padding: 12px 24px;
+      width: 140px;
+    }
+  }

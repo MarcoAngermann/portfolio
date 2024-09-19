@@ -1,0 +1,143 @@
+footer{
+    color: #ffffff;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+    
+  }
+
+  .footer-container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+ 
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      font-family: 'Karla', sans-serif;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+  }
+  
+  .footer-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    span{
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Fira Code', sans-serif;
+      color: #3dcfb3;
+    }
+  }
+
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    a{
+      position: relative;
+      font-size: 16px;
+      font-weight: 100;
+      font-family: 'Karla', sans-serif;
+      color: #ffffff;
+      text-decoration: none;
+      padding-bottom: 8px;
+
+      &:hover{
+        color: #3dcfb3;
+      }
+
+      &::after {
+        content: ""; 
+        position: absolute;
+        right: 110%;
+        bottom: 0px; 
+        transform: translateY(-260%);
+        width: 0px; 
+        height: 0px; 
+        background-color: #3dcfb6; 
+        border-radius: 50%; 
+        transition: width 0.3s ease, height 0.3s ease; 
+    }
+
+    &:hover::after {
+        width: 5px; 
+        height: 5px; 
+    }
+    }
+    
+
+  }
+  
+  .initials{
+    right: 180px;
+    top: 20px;
+    font-size: 60px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+  };
+  
+  .M{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    color: rgba(61, 207, 182, 0.8)
+  }
+  .A{
+    margin-right: -7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(61, 207, 182);
+    font-size: 61px;
+  }
+  
+  .logo{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .name{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .logo:hover .initials {
+    color: transparent;
+  }
+  
+  .logo:hover .A,
+  .logo:hover .M {
+    transition: 500ms;
+    color: transparent;
+    -webkit-text-stroke: 1px #5cd1b9;
+  }
+  
+  .logo:hover .name {
+    transition: 300ms;
+    color: transparent;
+    -webkit-text-stroke: 1px #5cd1b9;
+  }
