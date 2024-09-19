@@ -137,7 +137,7 @@ section{
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
-    color: rgba(61, 207, 182, 0.8)
+    color: rgb(61, 207, 182)
   }
   .A{
     margin-right: -7px;
@@ -175,6 +175,128 @@ section{
     transition: 300ms;
     color: transparent;
     -webkit-text-stroke: 1px #5cd1b9;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  .nav-link-mobile {
+    display: none; 
+    position: absolute;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    top: 35px; 
+    right: 20px;
+    width: 238px;
+    height: 252px;
+    background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3dcfb6;
+
+    button {
+      margin-top: 10px;
+      
+      .button-link {
+        opacity: 1;
+        display: inline-block;
+        animation: type 0.0s steps(3) forwards;
+      }
+    }
+
+    .mobile-link {
+      position: relative;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Fira Code', sans-serif;
+      opacity: 1;
+      display: inline-block;
+      animation: type 0.0s steps(3) forwards;
+
+
+      &::after {
+        content: ""; 
+        position: absolute;
+        left: 50%;
+        bottom: -10px; 
+        transform: translateX(-50%);
+        width: 0px; 
+        height: 0px; 
+        background-color: #3dcfb6; 
+        border-radius: 50%; 
+        transition: width 0.3s ease, height 0.3s ease; 
+    }
+
+    &:hover::after {
+        width: 5px; 
+        height: 5px; 
+    }
+    }
+  }
+  
+  .menu-open {
+    justify-content: center; 
+    flex-direction: column; 
+  }
+  
+  .nav-link-mobile a {
+    margin: 10px 0; 
+  }
+  
+  .mobile-menu {
+    position: relative; 
+  }
+  
+  .nav-link-mobile.menu-open {
+    left: -20px; 
+  }
+  
+
+  @media (max-width: 700px) {
+    .name{
+      display: none;
+    }
+
+    .initials{
+      padding-left: 10px;
+
+      .M{
+        font-size: 47px;
+        
+      }
+
+      .A{
+        font-size: 48px;
+      }
+    }
+
+    .header-navigation{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .nav-link-container{
+      display: none;
+    }
+
+    .mobile-menu{
+      display: block;
+      padding-right: 10px;
+
+      img{
+        width: 36px;
+        height: 32px;
+        object-fit: contain;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
   }
 
 

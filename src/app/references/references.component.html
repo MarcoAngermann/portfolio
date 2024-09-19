@@ -1,0 +1,26 @@
+<section>
+  <div>
+    <h1>What my colleagues say about me</h1>
+  </div>
+  <div class="wrapper">
+    <div class="carousel">
+      <div class="carousel__item" *ngFor="let reference of repeatedReferences; let i = index" 
+           [class.active]="i === currentIndex">
+        <div class="carousel__item-body">
+          <p class="title">{{ reference.title }}</p>
+          <div class="name-line-container">
+            <hr class="line">
+            <span class="name">{{ reference.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+

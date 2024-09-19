@@ -22,7 +22,7 @@ article {
     flex-direction: column;
     width: 100vw;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     .projects-title {
         padding-bottom: 50px;
@@ -92,27 +92,27 @@ article {
 .projects:hover h2::after {
     content: '';
     position: absolute;
-    background-image: url('../../assets/img/arrow.svg'); 
-    background-size: contain; /* Ensure the image fits well */
+    background-image: url('../../assets/img/arrow_outward.svg'); 
+    background-size: contain; 
     background-repeat: no-repeat;
-    width: 20px;  /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
+    width: 12px; 
+    height: 12px;
     top: 50%;
-    left: 100%; /* Position the image to the right of the text */
-    transform: translateY(-50%); /* Center the image vertically */
-    z-index: 0; /* Ensure it stays behind the text */
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
-    opacity: 0; /* Initially hidden */
+    left: 100%; 
+    transform: translateY(-50%); 
+    z-index: 0; 
+    transition: opacity 0.3s ease; 
+    opacity: 0; 
 }
   
   .projects:hover h2::after {
-    opacity: 1; /* Show the image on hover */
+    opacity: 1; 
 }
 
 .projects-img::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 120%;
     right: -360px;
     transform: translateY(-50%);
     width: 300px;
@@ -121,9 +121,66 @@ article {
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-image: var(--hovered-image); /* Das bleibt gleich */
+    background-image: var(--hovered-image);
 }
 
 .projects:hover::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -360px;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
     opacity: 1;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+body {
+    padding: 32px;
+  }
+
+
+  @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(32px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
 }
