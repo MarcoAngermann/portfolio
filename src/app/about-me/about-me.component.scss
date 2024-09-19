@@ -18,7 +18,8 @@ section {
 
     h2 {
         font-weight: 700;
-        color: #3bcfb6;;
+        color: #3bcfb6;
+        ;
         margin-top: 150px;
         font-family: 'Karla', sans-serif;
         font-size: 24px;
@@ -40,7 +41,8 @@ section {
 }
 
 .profile-img-container {
-    width: 50%;   
+    width: 50%;
+    position: relative;
 }
 
 .about-me-text-container {
@@ -59,7 +61,7 @@ section {
 
     .text-container {
         display: flex;
-        gap: 10px; 
+        gap: 10px;
     }
 
     h1 {
@@ -70,10 +72,8 @@ section {
         font-weight: 700;
     }
 }
-
-
 @media (max-width: 1250px) {
-    
+
     .about-me-container {
         position: static;
         background: #1c1c1c;
@@ -85,11 +85,14 @@ section {
 
         .profile-lines {
             position: static;
-            
+        }
+
+        .profile-img-container {
+           width: 0%;
         }
 
         .about-me-text-container {
-            width: 50%;
+            width: 95%;
         }
     }
 }
