@@ -1,4 +1,4 @@
-<section>
+<section id="skill-section">
     <div class="skill-container">
         <div class="left-container">
             <h2>Technologies</h2>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="right-container">
-            <div *ngFor="let skill of skills" class="skill-container">
+            <div *ngFor="let skill of skills" class="">
                 <div class="icon-container">
                     <img [src]="skill.src" alt="{{ skill.src }}" [alt]="skill.text">
                     <p>{{ skill.text }}</p>

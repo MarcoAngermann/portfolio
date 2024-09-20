@@ -34,7 +34,7 @@ section {
     .profile-lines {
         position: absolute;
         z-index: 1;
-        left: 50px;
+        right: 180px;
         top: 20px;
     }
 
@@ -77,7 +77,7 @@ section {
 @media (max-width: 1250px) {
 
     .about-me-container {
-        margin-top: 30px;
+        margin-top: 50px;
         position: static;
         background: #1c1c1c;
         overflow: hidden;

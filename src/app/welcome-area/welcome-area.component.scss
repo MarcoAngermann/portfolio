@@ -400,3 +400,13 @@ section {
     }
   }
 }
+
+@media (max-width: 380px) {
+  .seperator-left {
+    height: 140px;
+  }
+
+  .seperator-right {
+    height: 110px;
+  }
+}

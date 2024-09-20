@@ -1,6 +1,6 @@
-<section>
+<section id="projects-section">
     <div class="projects-container">
-        <div class="test">
+        
             <div class="projects-title">
                 <h3>Portfolio</h3>
                 <h1>Featured Projects</h1>
@@ -9,7 +9,7 @@
             </div>
             <div class="seperator"></div>
             <article 
-            class="projects projects-img" 
+            class="projects projects-img width" 
             (mouseenter)="hoveredImageUrl = '../../assets/img/join-hover.svg'"
             (mouseleave)="hoveredImageUrl = null"
             [ngStyle]="{'--hovered-image': 'url(' + hoveredImageUrl + ')'}">
@@ -18,7 +18,7 @@
           </article>
             <div class="seperator"></div> 
             <article 
-            class="projects projects-img" 
+            class="projects projects-img width" 
             (mouseenter)="hoveredImageUrl = 'assets/img/pollo-hover.svg'"
             (mouseleave)="hoveredImageUrl = null"
             [ngStyle]="{'--hovered-image': 'url(' + hoveredImageUrl + ')'}">
@@ -27,7 +27,7 @@
             </article>
             <div class="seperator"></div>
             <article 
-            class="projects projects-img" 
+            class="projects projects-img width" 
             (mouseenter)="hoveredImageUrl = 'assets/img/bubble-hover.svg'"
             (mouseleave)="hoveredImageUrl = null"
             [ngStyle]="{'--hovered-image': 'url(' + hoveredImageUrl + ')'}">
@@ -36,5 +36,4 @@
             </article>
             <div class="seperator"></div>
         </div>
-    </div>
 </section>
