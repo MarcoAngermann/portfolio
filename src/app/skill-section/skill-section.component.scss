@@ -150,15 +150,17 @@ section {
      .skill-container {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
 
      .left-container {
        width: 550px;
-       margin-bottom: 30px;
+       margin-bottom: 0px;
        margin-top: 30px;
      }
 
      .right-container {
        width: 550px;
+       margin-bottom: 50px;
      }
 
      }
@@ -171,13 +173,31 @@ section {
     .skill-container {
         display: flex;
         flex-direction: column;
+        width: 95%;
 
         .right-container {
+          display: flex;
+          justify-content: center;
           width: 95%;
-          gap : 20px;
+          gap : 0px;
+
+          .icon-container {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            p {
+              font-size: 16px;
+            }
+            img {
+              width: 50px;
+              height: 50px;
+              
+          
+            }
+          }
         }
         .left-container {
-          width: 95%;
+          width: 100%;
 
           .skill-text {
             padding: 16px 16px;

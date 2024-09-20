@@ -120,7 +120,7 @@ section {
   
   .carousel__item-body {
     width: 100%;
-    background-color: #207063ab;
+    background-color: #20706347;
     border-radius: 32px;
     padding: 16px 20px 16px 70px;
     border: 1px solid #3dcfb6;
@@ -226,6 +226,36 @@ section {
     font-weight: 400;
 }
 
+@media(max-width: 1460px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width: 635px) {
+  section {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .carousel {
+    max-width: 310px;
+
+    .wrapper {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
 
 
 
