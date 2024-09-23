@@ -21,4 +21,14 @@ export class SkillSectionComponent {
     {'src': '../../assets/img/Api.svg', 'text': 'Rest-Api'},
     {'src': '../../assets/img/scrum.svg', 'text': 'Scrum'},
   ];
+
+  isPopupVisible = false;
+
+  showPopup() {
+    this.isPopupVisible = true;
+  }
+
+  hidePopup() {
+    this.isPopupVisible = false;
+  }
 }

@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 85px;
     font-size: 18px;
     width: 100%;
     left: 50%;
@@ -15,6 +15,7 @@
     z-index: 2;
     padding-left: 10px;
     padding-right: 10px;
+    border-bottom: 1px solid #3dcfb764;
     
 
     nav {
@@ -85,6 +86,11 @@
     
 }
 
+.nav-link-container {
+    display: flex;
+    align-items: center;
+}
+
 .switch-button {
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -121,7 +127,6 @@
 
 section{
     color: #ffffff;
-    height: 300px;
     display: flex;
     justify-content: space-between;
   
@@ -131,7 +136,7 @@ section{
     right: 180px;
     top: 20px;
     font-size: 60px;
-    font-family: sans-serif;
+    font-family: 'Skinz';
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -142,16 +147,16 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(90deg);
-    color: rgb(61, 207, 182)
+    transform: rotate(0deg);
+    color: rgb(61, 207, 182);
+    font-size: 42px;
   }
   .A{
-    margin-right: -7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(61, 207, 182);
-    font-size: 61px;
+    color: #ffffff;
+    font-size: 42px;
   }
   
   .logo{
@@ -160,9 +165,9 @@ section{
     align-items: center;
   }
   .name{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Skinz';
     color: white;
   }
 
@@ -194,11 +199,11 @@ section{
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    top: 35px; 
-    right: 20px;
+    top: 40px; 
+    right: 5px;
     width: 238px;
     height: 252px;
-    background: transparent;
+    background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #3dcfb6;
