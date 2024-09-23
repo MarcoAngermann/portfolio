@@ -17,7 +17,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Eveniet, hic.</p>
                 </div>
-                <button class="btn"><span class="text">Let's Talk</span></button>
+                <a href="#contact-section" class="btn"><span class="text">Let's Talk</span></a>
             </div>
         </div>
         <div class="right-container">
@@ -27,6 +27,21 @@
                     <p>{{ skill.text }}</p>
                 </div>
             </div>
+            <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
+                <div class="hover-popup" *ngIf="isPopupVisible">
+                    <div class="mindset-icons">
+                        <div>
+                            <span>I have a special interest in learning</span>
+                        </div>
+                        <div class="popup-icons">
+                            <div><img src="../../assets/img/php.png" alt=""></div>
+                            <div><img src="../../assets/img/react.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../../assets/img/growthmindset.svg" alt="">
+                <p>Growth Mindset</p>
+              </div>
         </div>
     </div>
 </section>
