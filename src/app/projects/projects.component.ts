@@ -14,4 +14,9 @@ export class ProjectsComponent {
   setHoveredProject(imageUrl: string | null): void {
     this.hoveredImageUrl = imageUrl;
   }
+
+  projektInfo() {
+    console.log('Projekt Info');
+  }
 }
+

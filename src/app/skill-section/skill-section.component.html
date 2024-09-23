@@ -21,10 +21,10 @@
             </div>
         </div>
         <div class="right-container">
-            <div *ngFor="let skill of skills" class="">
+            <div *ngFor="let skill of Frontendskills" class="">
                 <div class="icon-container">
                     <img [src]="skill.src" alt="{{ skill.src }}" [alt]="skill.text">
-                    <p>{{ skill.text }}</p>
+                    <span>{{ skill.text }}</span>
                 </div>
             </div>
             <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
@@ -41,7 +41,12 @@
                 </div>
                 <img src="../../assets/img/growthmindset.svg" alt="">
                 <p>Growth Mindset</p>
-              </div>
+            </div>
+            <div class="skill-switch-container">
+                <span class="skill-switch">Frontend</span>
+                <span> | </span>
+                <span class="skill-switch">Backend</span>
+            </div>
         </div>
     </div>
 </section>
