@@ -39,10 +39,10 @@ article {
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 56px;
         margin-top: 0px;
         color: #3bcfb6;
-        font-family: 'Fira Code', sans-serif;
+        font-family: 'Conthrax', sans-serif;
         font-weight: 700;
     }
 
@@ -66,8 +66,8 @@ article {
 
     h2 {
         position: relative;
-        font-size: 24px;
-        font-family: 'Fira Code', sans-serif;
+        font-size: 21px;
+        font-family: 'Conthrax', sans-serif;
         font-weight: 700;
     }
 
@@ -126,7 +126,7 @@ article {
     content: '';
     position: absolute;
     top: -30px;
-    right: -360px;
+    right: -320px;
     transform: translateY(-50%);
     width: 300px;
     height: 300px;
@@ -137,6 +137,10 @@ article {
 body {
     padding: 32px;
   }
+
+.project-info {
+    display: none;
+}
 
 
   @keyframes myAnim {
@@ -210,7 +214,7 @@ body {
 
     .projects-title {
         h1 {
-            font-size: 56px;
+            font-size: 42px;
         }
     }
 }

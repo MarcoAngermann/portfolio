@@ -4,8 +4,8 @@
   </div>
   <div class="wrapper">
     <div class="carousel">
-      <div class="carousel__item" *ngFor="let reference of repeatedReferences; let i = index" 
-           [class.active]="i === currentIndex">
+      <div class="carousel__item" *ngFor="let reference of repeatedReferences; let i = index"
+        [class.active]="i === currentIndex">
         <div class="carousel__item-body">
           <p class="title">{{ reference.title }}</p>
           <div class="name-line-container">
@@ -17,10 +17,3 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
