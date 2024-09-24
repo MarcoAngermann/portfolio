@@ -13,7 +13,6 @@ export class HeaderComponent {
 
   openMenu() {
     this.isMenuOpen = !this.isMenuOpen;
-    console.log('open menu');
   }
 
   get menuIcon() {

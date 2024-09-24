@@ -1,52 +1,51 @@
 <section id="skill-section">
     <div class="skill-container">
-        <div class="left-container">
-            <h2>Technologies</h2>
-            <div class="skill-text">
-                <h1>Skill Set</h1>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi unde doloribus laudantium
-                        recusandae nesciunt amet esse dolorem laborum ipsa saepe aliquid atque, minus excepturi ab ex
-                        ipsum reiciendis repudiandae?
-                        Tempora sequi unde doloribus laudantium recusandae nesciunt amet esse dolorem laborum ipsa saepe
-                        aliquid atque, minus excepturi ab ex ipsum reiciendis repudiandae?
-                    </p>
-                </div>
-                <h2>You need another skill?</h2>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Eveniet, hic.</p>
-                </div>
-                <a href="#contact-section" class="btn"><span class="text">Let's Talk</span></a>
-            </div>
+      <div class="left-container">
+        <h2>Technologies</h2>
+        <div class="skill-text">
+          <h1>Skill Set</h1>
+          <div class="text-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+          <h2>You need another skill?</h2>
+          <div class="text-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+          <a href="#contact-section" class="btn"><span class="text">Let's Talk</span></a>
         </div>
-        <div class="right-container">
-            <div *ngFor="let skill of Frontendskills" class="">
-                <div class="icon-container">
-                    <img [src]="skill.src" alt="{{ skill.src }}" [alt]="skill.text">
-                    <span>{{ skill.text }}</span>
-                </div>
-            </div>
-            <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
-                <div class="hover-popup" *ngIf="isPopupVisible">
-                    <div class="mindset-icons">
-                        <div>
-                            <span>I have a special interest in learning</span>
-                        </div>
-                        <div class="popup-icons">
-                            <div><img src="../../assets/img/php.png" alt=""></div>
-                            <div><img src="../../assets/img/react.png" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-                <img src="../../assets/img/growthmindset.svg" alt="">
-                <p>Growth Mindset</p>
-            </div>
-            <div class="skill-switch-container">
-                <span class="skill-switch">Frontend</span>
-                <span> | </span>
-                <span class="skill-switch">Backend</span>
-            </div>
+      </div>
+      
+      <div class="right-container">
+        <!-- Frontend or Backend skills based on toggle -->
+        <div *ngFor="let skill of showFrontend ? Frontendskills : Backendskills" class="">
+          <div class="icon-container">
+            <img [src]="skill.src" alt="{{ skill.text }}">
+            <span>{{ skill.text }}</span>
+          </div>
         </div>
+        
+        <!-- Mindset section -->
+        <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
+          <div class="hover-popup" *ngIf="isPopupVisible">
+            <div class="mindset-icons">
+              <div><span>I have a special interest in learning</span></div>
+              <div class="popup-icons">
+                <div><img src="../../assets/img/php.png" alt=""></div>
+                <div><img src="../../assets/img/react.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <img src="../../assets/img/growthmindset.svg" alt="">
+          <p>Growth Mindset</p>
+        </div>
+        
+        <!-- Skill switch between Frontend and Backend -->
+        <div class="skill-switch-container" (click)="toggleSkills()">
+          <span class="skill-switch" [class.active]="showFrontend">Frontend</span>
+          <span> | </span>
+          <span class="skill-switch" [class.active]="!showFrontend">Backend</span>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+  

@@ -1,8 +1,10 @@
 section {
+  position: relative;
+  z-index: 1;
     display: flex;
     background-color: #1c1c1c;
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     max-width: 100%;
     align-items: center;
     justify-content: center;
