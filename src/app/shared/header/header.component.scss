@@ -1,20 +1,22 @@
+section {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
 .header-navigation {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
-  position: fixed;
-  height: 85px;
-  left: 50%;
+  position: absolute;
   top: 0;
+  height: 100px;
   display: flex;
   align-items: center;
   font-size: 18px;
   width: 100%;
-  transform: translateX(-50%);
   z-index: 2;
-  background-color: #1c1c1c8b;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #3dcfb764;
+
 
 
   nav {
