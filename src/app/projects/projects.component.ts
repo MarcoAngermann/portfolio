@@ -16,7 +16,7 @@ export class ProjectsComponent {
       subtitle: 'Task Management Tool',
       githubUrl: 'https://github.com/MarcoAngermann/join-project',
       livetestUrl: 'https://marco-angermann.developerakademie.net/join/',
-      description: 'A collaboration platform to manage tasks.',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       technologies: [
         { iconUrl: '../../assets/img/javascriptgreen.svg' },
         { iconUrl: '../../assets/img/htmlgreen.svg' },
@@ -32,7 +32,7 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/MarcoAngermann/el-pollo-loco',
       livetestUrl: 'https://elpollo-locobig.netlify.app/',
       subtitle: '2D Game',
-      description: 'A funny 2D platformer game.',
+      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: [
         { iconUrl: '../../assets/img/htmlgreen.svg' },
         { iconUrl: '../../assets/img/cssgreen.svg' },
@@ -47,7 +47,7 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/MarcoAngermann/DA-Bubble',
       livetestUrl: 'https://da-bubble.netlify.app/',
       subtitle: 'Social Media App',
-      description: 'A social media platform for sharing content.',
+      description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface.',
       technologies: [
         { iconUrl: '../../assets/img/angulargreen.svg' },
         { iconUrl: '../../assets/img/typescriptgreen.svg' },
