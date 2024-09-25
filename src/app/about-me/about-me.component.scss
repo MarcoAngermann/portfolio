@@ -15,7 +15,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 10px;
-    z-index: 5;
+    z-index: 1;
 
     h2 {
         font-weight: 700;
@@ -83,7 +83,6 @@ section {
 
     .about-me-container {
         margin-top: 50px;
-        position: static;
         background: #1c1c1c;
         overflow: hidden;
         display: flex;
@@ -116,6 +115,10 @@ section {
 }
 
 @media (max-width: 600px) {
+    section {
+        z-index: 0;
+    }
+
     .about-me-container {
         .about-me-text {
             padding: 16px 16px;
@@ -127,6 +130,7 @@ section {
     }
     .profile-img {
         width: 95%;
+        z-index: 0;
     }
 
     .about-me-text {
