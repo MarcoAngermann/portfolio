@@ -5,6 +5,18 @@ section {
   position: relative;
 }
 
+.mobile-menu {
+  img {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    background-color: #1c1c1c45;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
 .header-navigation {
   display: flex;
   justify-content: space-between;
@@ -227,13 +239,13 @@ section {
 
 .nav-link-mobile {
   display: none;
-  position: absolute;
+  position: fixed;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  top: 40px;
-  right: 5px;
+  top: 70px;
+  right: 30px;
   width: 238px;
   height: 252px;
   background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
@@ -342,8 +354,8 @@ section {
     z-index: 999;
 
     img {
-      width: 36px;
-      height: 32px;
+      width: 46px;
+      height: 42px;
       object-fit: contain;
       z-index: 999;
 
