@@ -38,8 +38,9 @@
 
     <div class="project-info" *ngIf="selectedProject">
         <div class="project-left">
-            <h1>{{ selectedProject.title }}</h1>
-            <h2>{{ selectedProject.subtitle }}</h2>
+            <h1> {{ selectedProject.number }}</h1>
+            <h2>{{ selectedProject.title }}</h2>
+            <h3>{{ selectedProject.subtitle }}</h3>
             <p>{{ selectedProject.description }}</p>
             <div class="project-icons">
                 <div *ngFor="let technology of selectedProject.technologies">
@@ -47,12 +48,18 @@
                 </div>
             </div>
             <div class="button-container">
-                <button class="btn"><span class="text">Github</span></button>
-                <button class="btn"><span class="text">Live Test</span></button>
+                <a [href]="selectedProject.githubUrl" target="_blank" class="btn"><span class="text">Github</span></a>
+                <a [href]="selectedProject.livetestUrl" target="_blank"  class="btn"><span class="text">Live Test</span></a>
             </div>
         </div>
         <div class="project-right">
+            <div class="close-button-container">
+                <button (click)="selectedProject = null">X</button>
+            </div>
             <img [src]="selectedProject.infoUrl">
+            <div class="next-button-container">
+                <button (click)="next()">Next project <img src="../../assets/img/arrow.svg" alt=""></button>
+            </div>
         </div>
     </div>
 </section>

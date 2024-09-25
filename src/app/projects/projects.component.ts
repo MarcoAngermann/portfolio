@@ -11,8 +11,11 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
+      number: '01',
       title: 'Join',
       subtitle: 'Task Management Tool',
+      githubUrl: 'https://github.com/MarcoAngermann/join-project',
+      livetestUrl: 'https://marco-angermann.developerakademie.net/join/',
       description: 'A collaboration platform to manage tasks.',
       technologies: [
         { iconUrl: '../../assets/img/javascriptgreen.svg' },
@@ -24,7 +27,10 @@ export class ProjectsComponent {
       infoUrl: '../../assets/img/joinbig.png'
     },
     {
+      number: '02',
       title: 'El Pollo Loco',
+      githubUrl: 'https://github.com/MarcoAngermann/el-pollo-loco',
+      livetestUrl: 'https://elpollo-locobig.netlify.app/',
       subtitle: '2D Game',
       description: 'A funny 2D platformer game.',
       technologies: [
@@ -36,7 +42,10 @@ export class ProjectsComponent {
       infoUrl: '../../assets/img/elpollobig.png'
     },
     {
+      number: '03',
       title: 'DA Bubble',
+      githubUrl: 'https://github.com/MarcoAngermann/DA-Bubble',
+      livetestUrl: 'https://da-bubble.netlify.app/',
       subtitle: 'Social Media App',
       description: 'A social media platform for sharing content.',
       technologies: [
@@ -68,6 +77,14 @@ export class ProjectsComponent {
   selectProject(project: any): void {
     this.selectedProject = project;
     this.showProjectInfo = true;
+  }
+
+  nextProject: any = this.projects[0];
+  currentIndex: number = 0;
+
+  next(): void {
+    this.currentIndex = (this.currentIndex + 1) % this.projects.length;
+    this.selectedProject = this.projects[this.currentIndex];
   }
 }
 
