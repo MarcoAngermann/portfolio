@@ -171,6 +171,7 @@ label {
     transform: rotate(180deg);
     right: 55px;
     bottom: -50px;
+    z-index: 999;
   
     img {
       animation: moveUpDown 2s ease-in-out infinite;

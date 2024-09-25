@@ -2,6 +2,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100vw;
   max-width: 100%;
   background: radial-gradient(22.43% 43.85% at 1.22% 52.45%,
@@ -178,6 +180,7 @@ section {
 
 @media (max-width: 1250px) {
   section {
+    padding-top: 0px;
     .skill-container {
       display: flex;
       flex-direction: column;
