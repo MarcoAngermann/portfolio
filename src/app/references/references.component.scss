@@ -238,17 +238,19 @@ section {
 
 @media(max-width: 635px) {
   section {
-    height: 65vh;
+    height: 70vh;
     .title {
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      margin-bottom: 0px;
       h1 {
         font-size: 24px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
       }
     }
+
   }
 
   .carousel {
