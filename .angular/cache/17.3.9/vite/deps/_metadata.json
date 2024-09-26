@@ -1,43 +1,58 @@
 {
-  "hash": "8080194c",
-  "configHash": "5f2dbf25",
+  "hash": "86c5f428",
+  "configHash": "a84faf7e",
   "lockfileHash": "739def84",
-  "browserHash": "da0a5b22",
+  "browserHash": "ab80eb22",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "b002ee2a",
+      "fileHash": "ef1ee33c",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "92ad0247",
+      "fileHash": "c5883c82",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "bf67c05d",
+      "fileHash": "ff836b31",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "e9dfdd1c",
+      "fileHash": "8c998e22",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "20bc0b20",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "ea2307ef",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-6IGGNZOG": {
-      "file": "chunk-6IGGNZOG.js"
+    "chunk-A4HGNWEW": {
+      "file": "chunk-A4HGNWEW.js"
     },
-    "chunk-42HI5PUK": {
-      "file": "chunk-42HI5PUK.js"
+    "chunk-4TNICGIJ": {
+      "file": "chunk-4TNICGIJ.js"
     },
-    "chunk-LF2LKXYJ": {
-      "file": "chunk-LF2LKXYJ.js"
+    "chunk-K2YNOWK4": {
+      "file": "chunk-K2YNOWK4.js"
+    },
+    "chunk-YVOBCSOD": {
+      "file": "chunk-YVOBCSOD.js"
     }
   }
 }
