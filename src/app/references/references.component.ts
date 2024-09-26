@@ -12,7 +12,7 @@ export class ReferencesComponent {
   references = [
     { title: 'Marco has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.', name: 'Maximilian. L' },
     { title: 'Marco was a key player in ensuring our project was completed on time. His knowledge and dedication are unparalleled.', name: 'Nafi. M' },
-    { title: 'Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table.', name: 'Schmidt' }
+    { title: 'Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table.', name: 'Lukas. N' }
   ];
 
   currentIndex = 0;
