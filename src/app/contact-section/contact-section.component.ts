@@ -20,7 +20,7 @@ export class ContactSectionComponent {
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, this.wordCountValidator(10)]],
-      agree: [false, [Validators.requiredTrue]] // Checkbox validieren
+      agree: [false, [Validators.requiredTrue]]
     });
   }
 
