@@ -17,20 +17,19 @@
         <img src="../../assets/img/arrow.svg" alt="Scroll up">
       </a>
     </div>
-
     <div class="right-container">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="contact-formular">
         <div class="top-side">
           <div class="input">
             <label for="name">Your Name</label>
-            <input type="text" id="name" formControlName="name" placeholder="Your name goes here" required />
+            <input type="text" id="name" formControlName="name" placeholder="Your name goes here" autocomplete="off" required />
             <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
               <small class="error">Please enter your name.</small>
             </div>
           </div>
           <div class="input">
             <label for="email">Your Email</label>
-            <input type="email" id="email" formControlName="email" placeholder="youremail@email.com" required />
+            <input type="email" id="email" formControlName="email" placeholder="youremail@email.com" autocomplete="off" required />
             <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
               <small class="error">Please enter a valid email.</small>
             </div>
@@ -43,10 +42,9 @@
             </div>
           </div>
         </div>
-
         <div class="bottom-side">
           <div class="send-contact">
-            <input type="checkbox" id="check" class="checkbox" formControlName="agree" />
+            <input type="checkbox" id="check" class="checkbox" formControlName="agree" autocomplete="off" />
             <label for="check">
               I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.
             </label>

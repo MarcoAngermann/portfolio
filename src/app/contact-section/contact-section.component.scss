@@ -99,6 +99,7 @@ label {
     textarea:focus {
       outline: none;
       border-bottom: 1px solid #3dcfb6;
+      background-color: transparent;
     }
   }
   
@@ -272,6 +273,7 @@ label {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      padding: 60px 0;
 
       .left-container {
         width: 100%;
