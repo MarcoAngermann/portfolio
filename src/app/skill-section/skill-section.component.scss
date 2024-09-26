@@ -294,7 +294,13 @@ section {
     flex-direction: column;
     z-index: 10;
     border-radius: 32px;
-    color: #3bcfb6;
+    color: #2a9785;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+    
 
     .mindset-icons {
       display: flex;
@@ -308,4 +314,3 @@ section {
       margin-top: 5px;
     }
   }
-}

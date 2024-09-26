@@ -1,6 +1,6 @@
 section {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
     display: flex;
     background-color: #1c1c1c;
     width: 100vw;
@@ -9,6 +9,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 
     h1 {
         font-size: 26px;
@@ -237,6 +238,7 @@ section {
 
 @media(max-width: 635px) {
   section {
+    height: 65vh;
     .title {
       display: flex;
       align-items: center;
