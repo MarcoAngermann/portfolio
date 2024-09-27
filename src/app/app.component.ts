@@ -15,3 +15,4 @@ import { FooterComponent } from './shared/footer/footer.component';
 export class AppComponent {
   title = 'portfolio';
 }
+

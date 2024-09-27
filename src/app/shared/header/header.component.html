@@ -1,21 +1,22 @@
 <section>
   <nav class="header-navigation">
     <div (click)="openMenu()" class="mobile-menu">
-      <img [src]="menuIcon"  alt="menu icon">
+      <img [src]="menuIcon" alt="menu icon">
       <div class="nav-link-mobile" [ngStyle]="{'display': isMenuOpen ? 'flex' : 'none'}">
-        <button class="switch-button">
-          <span class="button-link">DE</span>
-          <span class="button-link">EN</span>
-        </button>
-        <a href="#projects-section" class="mobile-link">Projects</a>
-        <a href="#skill-section" class="mobile-link">Skills</a>
-        <a href="#about-me" class="mobile-link">About me</a>
+        <button class="switch-button" (click)="toggleLanguage()">
+          <span class="button-link" [class.active]="selectedLanguage === 'DE'">DE</span>
+          <span class="button-link" [class.active]="selectedLanguage === 'EN'">EN</span>
+        </button>        
+        <a href="#about-me" class="nav-link">About me</a>
+        <a href="#skill-section" class="nav-link">Skills</a>
+        <a href="#projects-section" class="nav-link">Projects</a>
+
       </div>
     </div>
     <div class="nav-link-container">
-      <button class="switch-button">
-        <span class="button-link">DE</span>
-        <span class="button-link">EN</span>
+      <button class="switch-button" (click)="toggleLanguage()">
+        <span class="button-link" [class.active]="selectedLanguage === 'DE'">DE</span>
+        <span class="button-link" [class.active]="selectedLanguage === 'EN'">EN</span>
       </button>
       <a href="#about-me" class="nav-link">About me</a>
       <a href="#skill-section" class="nav-link">Skills</a>

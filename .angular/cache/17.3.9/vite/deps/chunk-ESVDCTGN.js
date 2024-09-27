@@ -1,54 +1,8 @@
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b ||= {})
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-var __objRest = (source, exclude) => {
-  var target = {};
-  for (var prop in source)
-    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
-      target[prop] = source[prop];
-  if (source != null && __getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(source)) {
-      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
-        target[prop] = source[prop];
-    }
-  return target;
-};
-var __async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
+import {
+  __async,
+  __spreadProps,
+  __spreadValues
+} from "./chunk-J4B6MK7R.js";
 
 // node_modules/@angular/core/fesm2022/primitives/signals.mjs
 function defaultEquals(a, b) {
@@ -3274,6 +3228,112 @@ function last2(predicate, defaultValue) {
 // node_modules/rxjs/dist/esm5/internal/operators/scan.js
 function scan(accumulator, seed) {
   return operate(scanInternals(accumulator, seed, arguments.length >= 2, true));
+}
+
+// node_modules/rxjs/dist/esm5/internal/operators/share.js
+function share(options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _a = options.connector, connector = _a === void 0 ? function() {
+    return new Subject();
+  } : _a, _b = options.resetOnError, resetOnError = _b === void 0 ? true : _b, _c = options.resetOnComplete, resetOnComplete = _c === void 0 ? true : _c, _d = options.resetOnRefCountZero, resetOnRefCountZero = _d === void 0 ? true : _d;
+  return function(wrapperSource) {
+    var connection;
+    var resetConnection;
+    var subject;
+    var refCount2 = 0;
+    var hasCompleted = false;
+    var hasErrored = false;
+    var cancelReset = function() {
+      resetConnection === null || resetConnection === void 0 ? void 0 : resetConnection.unsubscribe();
+      resetConnection = void 0;
+    };
+    var reset = function() {
+      cancelReset();
+      connection = subject = void 0;
+      hasCompleted = hasErrored = false;
+    };
+    var resetAndUnsubscribe = function() {
+      var conn = connection;
+      reset();
+      conn === null || conn === void 0 ? void 0 : conn.unsubscribe();
+    };
+    return operate(function(source, subscriber) {
+      refCount2++;
+      if (!hasErrored && !hasCompleted) {
+        cancelReset();
+      }
+      var dest = subject = subject !== null && subject !== void 0 ? subject : connector();
+      subscriber.add(function() {
+        refCount2--;
+        if (refCount2 === 0 && !hasErrored && !hasCompleted) {
+          resetConnection = handleReset(resetAndUnsubscribe, resetOnRefCountZero);
+        }
+      });
+      dest.subscribe(subscriber);
+      if (!connection && refCount2 > 0) {
+        connection = new SafeSubscriber({
+          next: function(value) {
+            return dest.next(value);
+          },
+          error: function(err) {
+            hasErrored = true;
+            cancelReset();
+            resetConnection = handleReset(reset, resetOnError, err);
+            dest.error(err);
+          },
+          complete: function() {
+            hasCompleted = true;
+            cancelReset();
+            resetConnection = handleReset(reset, resetOnComplete);
+            dest.complete();
+          }
+        });
+        innerFrom(source).subscribe(connection);
+      }
+    })(wrapperSource);
+  };
+}
+function handleReset(reset, on) {
+  var args = [];
+  for (var _i = 2; _i < arguments.length; _i++) {
+    args[_i - 2] = arguments[_i];
+  }
+  if (on === true) {
+    reset();
+    return;
+  }
+  if (on === false) {
+    return;
+  }
+  var onSubscriber = new SafeSubscriber({
+    next: function() {
+      onSubscriber.unsubscribe();
+      reset();
+    }
+  });
+  return innerFrom(on.apply(void 0, __spreadArray([], __read(args)))).subscribe(onSubscriber);
+}
+
+// node_modules/rxjs/dist/esm5/internal/operators/shareReplay.js
+function shareReplay(configOrBufferSize, windowTime2, scheduler) {
+  var _a, _b, _c;
+  var bufferSize;
+  var refCount2 = false;
+  if (configOrBufferSize && typeof configOrBufferSize === "object") {
+    _a = configOrBufferSize.bufferSize, bufferSize = _a === void 0 ? Infinity : _a, _b = configOrBufferSize.windowTime, windowTime2 = _b === void 0 ? Infinity : _b, _c = configOrBufferSize.refCount, refCount2 = _c === void 0 ? false : _c, scheduler = configOrBufferSize.scheduler;
+  } else {
+    bufferSize = configOrBufferSize !== null && configOrBufferSize !== void 0 ? configOrBufferSize : Infinity;
+  }
+  return share({
+    connector: function() {
+      return new ReplaySubject(bufferSize, windowTime2, scheduler);
+    },
+    resetOnError: true,
+    resetOnComplete: false,
+    resetOnRefCountZero: refCount2
+  });
 }
 
 // node_modules/rxjs/dist/esm5/internal/operators/startWith.js
@@ -24098,10 +24158,6 @@ if (typeof ngDevMode !== "undefined" && ngDevMode) {
 }
 
 export {
-  __spreadValues,
-  __spreadProps,
-  __objRest,
-  __async,
   Subscription,
   pipe,
   Observable,
@@ -24133,6 +24189,7 @@ export {
   takeLast,
   last2 as last,
   scan,
+  shareReplay,
   startWith,
   switchMap,
   takeUntil,
@@ -24633,4 +24690,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-YVOBCSOD.js.map
+//# sourceMappingURL=chunk-ESVDCTGN.js.map
