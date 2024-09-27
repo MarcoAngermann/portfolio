@@ -51,11 +51,28 @@
   },
   "contact": {
     "contact": "Kontakt",
-    "title": "Arbeiten wir",
-    "title1": "zusammen",
-    "title2": "Sollten Sie irgendwelche Fragen haben, kontaktieren Sie mich gerne.",
-    "subtitle": "Gibt es ein Problem zu lösen?",
-    "textbox": "Ich bin offen für neue Ideen und immer bestrebt, mein Wissen und meine Fähigkeiten auf das zurückste Level zu bringen."
-
-  }
+    "title": "Arbeiten",
+    "title1": "wir zusammen",
+    "title2": "Gibt es ein Problem zu lösen?",
+    "textbox": "Kontaktieren Sie mich über das Formular. Ich bin daran interessiert,",
+    "textbox1": "von Ihnen zu hören,Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "textbox2": "Sie benötigen einen Fullstack Entwickler?",
+    "span": "Schreiben sie mir"
+  },
+  "contactform": {
+    "name": "Dein Name",
+    "email": "Deine Email",
+    "message": "Deine Nachricht",
+    "button": "Sag Hallo ;)"
+  },
+  "placeholder": {
+    "name": "Hier dein Namen eingeben",
+    "email": "Deine@email.de",
+    "message": "Hallo Marco, ich bin interessiert..."
+  },
+  "policy": {
+    "text1": "Ich habe die",
+    "text2": "Datenschutzbestimmungen",
+    "text3": "gelesen und stimme der Verarbeitung meiner Daten zu."
+}
 }
