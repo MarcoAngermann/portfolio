@@ -1,22 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule,TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  constructor(public translateService: TranslateService) {}
+
   projects = [
     {
       number: '01',
       title: 'Join',
-      subtitle: 'Task Management Tool',
+      subtitle: 'project-info.subtitle',
       githubUrl: 'https://github.com/MarcoAngermann/join-project',
       livetestUrl: 'https://marco-angermann.developerakademie.net/join/',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: 'project-info.description',
       technologies: [
         { iconUrl: '../../assets/img/javascriptgreen.svg' },
         { iconUrl: '../../assets/img/htmlgreen.svg' },
@@ -31,8 +34,8 @@ export class ProjectsComponent {
       title: 'El Pollo Loco',
       githubUrl: 'https://github.com/MarcoAngermann/el-pollo-loco',
       livetestUrl: 'https://marco-angermann.developerakademie.net/el-pollo-loco/',
-      subtitle: '2D Game',
-      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      subtitle: 'project-info.subtitle1',
+      description: 'project-info.description1',
       technologies: [
         { iconUrl: '../../assets/img/htmlgreen.svg' },
         { iconUrl: '../../assets/img/cssgreen.svg' },
@@ -46,8 +49,8 @@ export class ProjectsComponent {
       title: 'DA Bubble',
       githubUrl: 'https://github.com/MarcoAngermann/DA-Bubble',
       livetestUrl: 'https://da-bubble.netlify.app/',
-      subtitle: 'Social Media App',
-      description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface.',
+      subtitle: 'project-info.subtitle2',
+      description: 'project-info.description2',
       technologies: [
         { iconUrl: '../../assets/img/angulargreen.svg' },
         { iconUrl: '../../assets/img/typescriptgreen.svg' },

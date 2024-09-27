@@ -1,8 +1,61 @@
 {
-    "header": {
-      "aboutMe": "Über mich",
-      "skills": "Fähigkeiten",
-      "projects": "Projekte"
-    }
+  "header": {
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte"
+  },
+  "welcome": {
+    "button": "Projekte",
+    "button2": "Kontakt",
+    "span1": "Offen für Arbeit",
+    "span2": "Wohnort Plettenberg",
+    "span3": "Verfügbar für Homeoffice",
+    "span4": "Front & Backend Entwickler"
+  },
+  "aboutme": {
+    "title": "Wer ich bin",
+    "aboutme-title": "Über mich",
+    "first-text": "Hallo, mein Name ist Marco und ich bin ein deutschsprachiger Frontend-Entwickler aus Plettenberg. Angetrieben von den unbegrenzten Möglichkeiten der IT, begeistert es mich, visuell ansprechende und intuitive Websites sowie Anwendungen zu entwickeln.",
+    "second-text": "Ich bin flexibel und arbeite sowohl vor Ort in Plettenberg als auch remote effektiv. Dank meiner Anpassungsfähigkeit integriere ich mich problemlos in Teams oder arbeite selbstständig an Projekten, stets mit einer klaren Kommunikation und strukturierten Arbeitsweise.",
+    "third-text": "Ich bin offen für neue Ideen und immer bestrebt, mich persönlich weiterzuentwickeln. Ständig auf der Suche nach spannenden Herausforderungen, sehe ich jede Aufgabe als Chance, mein Wissen und meine Fähigkeiten auf das nächste Level zu bringen.",
+    "fourth-text": "In meinem Beruf ist Programmieren nicht nur das Schreiben von Code, sondern eine kreative Art, Probleme zu lösen. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So unterstütze ich Sie dabei, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  },
+  "skills": {
+    "title": "Technologien",
+    "skillset": "Expertise",
+    "text-skillset": "Im Rahmen meiner Weiterbildung im Front- und Backend-Bereich habe ich an verschiedenen Projekten gearbeitet und dabei eine Vielzahl von Technologien und Konzepten eingesetzt. Ich bin offen für neue Ansätze, um meine Fähigkeiten kontinuierlich zu erweitern und in der sich ständig weiterentwickelnden Welt der Webentwicklung immer auf dem neuesten Stand zu bleiben.",
+    "second-title": "Sie brauchen eine weitere Fertigkeit?",
+    "second-text": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen und neue Erfahrungen zu sammeln.",
+    "button": "Kontaktieren",  
+    "mindset": "Ich habe ein besonderes Interesse dies zu Lernen"
+  },
+  "projects": {
+    "title": "Projekte",
+    "text": "Entdecken Sie hier eine Auswahl meiner Arbeiten und interagieren Sie mit meinen Projekten,",
+    "text2": "um meine Fähigkeiten in Aktion zu erleben."
+  },
+  "project-info": {
+    "subtitle": "Aufgabenmanager Tool",
+    "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu",
+    "subtitle1": "2D Jump and Run Spiel",
+    "description1": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "subtitle2": "Sozialemedien App",
+    "description2": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Oberfläche.",
+    "button": "Nächstes Projekt"
+  },
+  "references": {
+    "title": "Was meine Kollegen über mich sagen",
+    "textbox1": "Marco hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
+    "textbox2": "Marcos ruhige Art half uns, fokussiert bei der Projektarbeit zu bleiben. Seine technischen Fähigkeiten waren äußerst hilfreich für den Erfolg unserer Projekte.",
+    "textbox3": "Die Zusammenarbeit mit Marco ist immer ein Vergnügen. Er bringt frische Ideen und kreative Lösungen auf den Tisch."
+  },
+  "contact": {
+    "contact": "Kontakt",
+    "title": "Arbeiten wir",
+    "title1": "zusammen",
+    "title2": "Sollten Sie irgendwelche Fragen haben, kontaktieren Sie mich gerne.",
+    "subtitle": "Gibt es ein Problem zu lösen?",
+    "textbox": "Ich bin offen für neue Ideen und immer bestrebt, mein Wissen und meine Fähigkeiten auf das zurückste Level zu bringen."
+
   }
-  
+}

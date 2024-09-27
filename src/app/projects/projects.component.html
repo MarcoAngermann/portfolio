@@ -2,9 +2,9 @@
     <div class="projects-container">
         <div class="projects-title">
             <h3>Portfolio</h3>
-            <h1>Featured Projects</h1>
-            <p>Explore a selection of my work here - Interact with</p>
-            <p>projects to see my skills in action</p>
+            <h1>{{ 'projects.title' | translate }}</h1>
+            <p>{{ 'projects.text' | translate }}</p>
+            <p>{{ 'projects.text2' | translate }}</p>
         </div>
         <div class="seperator"></div>
 
@@ -40,8 +40,8 @@
         <div class="project-left">
             <h1> {{ selectedProject.number }}</h1>
             <h2>{{ selectedProject.title }}</h2>
-            <h3>{{ selectedProject.subtitle }}</h3>
-            <p>{{ selectedProject.description }}</p>
+            <h3>{{ selectedProject.subtitle | translate }}</h3>
+            <p>{{ selectedProject.description | translate }}</p>
             <div class="project-icons">
                 <div *ngFor="let technology of selectedProject.technologies">
                     <img [src]="technology.iconUrl" alt="{{ technology.name }}">
@@ -58,7 +58,7 @@
             </div>
             <img [src]="selectedProject.infoUrl">
             <div class="next-button-container">
-                <button (click)="next()">Next project <img src="../../assets/img/arrow.svg" alt=""></button>
+                <button (click)="next()">{{ 'project-info.button' | translate }}<img src="../../assets/img/arrow.svg" alt=""></button>
             </div>
         </div>
     </div>

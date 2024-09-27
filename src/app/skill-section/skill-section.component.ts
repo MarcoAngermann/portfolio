@@ -1,15 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule,TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skill-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './skill-section.component.html',
   styleUrl: './skill-section.component.scss'
 })
 export class SkillSectionComponent {
   showFrontend = true; // Default to showing frontend skills
+  constructor(public translateService: TranslateService) {}
 
   Frontendskills = [
     { 'src': '../../assets/img/html.svg', 'text': 'HTML' },
