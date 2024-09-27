@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  selectedLanguage: string = 'EN'; // Standard auf Englisch
 
   openMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -18,7 +19,20 @@ export class HeaderComponent {
   get menuIcon() {
     return this.isMenuOpen ? '../../../assets/img/menuactivate.svg' : '../../../assets/img/menu.png';
   }
+
+  toggleLanguage() {
+    this.selectedLanguage = this.selectedLanguage === 'DE' ? 'EN' : 'DE';
+  }
 }
+
+
+
+
+
+
+
+  
+
 
 
 

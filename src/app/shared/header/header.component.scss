@@ -132,7 +132,31 @@ section {
   border: 1px solid #ffffff;
   border-radius: 20px;
   font-family: 'Conthrax', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  
+
+  .button-link {
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+    &.active {
+      background-color: #3dcfb6;
+      color: #000000;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
+
+
 
 .logo {
   display: flex;
