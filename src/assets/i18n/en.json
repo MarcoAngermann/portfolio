@@ -1,8 +1,53 @@
 {
-    "header": {
-      "aboutMe": "About me",
-      "skills": "Skills",
-      "projects": "Projects"
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "welcome": {
+    "button": "Projects",
+    "button2": "Contact",
+    "span1": "Open to work",
+    "span2": "Based in Plettenberg",
+    "span3": "Available for remote work",
+    "span4": "Fullstack Developer"
+  },
+  "aboutme": {
+    "title": "Who I am",
+    "aboutme-title": "About me",
+    "first-text": "Hello, my name is Marco and I am a German-speaking frontend developer from Plettenberg. Driven by the unlimited possibilities of IT, I am passionate about developing visually appealing and intuitive websites and applications.",
+    "second-text": "I am flexible and work effectively both on site in Plettenberg and remotely. Thanks to my adaptability, I integrate easily into teams or work independently on projects, always with clear communication and a structured way of working.",
+    "third-text": "I am open to new ideas and always strive to develop personally. Always on the lookout for exciting challenges, I see every task as an opportunity to take my knowledge and skills to the next level.",
+    "fourth-text": "In my job, programming is not just writing code, but a creative way of solving problems. I pride myself on turning complex technical challenges into simple, user-friendly solutions. This is how I help you achieve your goals and bring your visions to life."
+  },
+  "skills": {
+    "title": "Technologies",
+    "skillset": "Skill Set",
+    "text-skillset": "As part of my training in the front and backend fields, I have worked on various projects, utilizing a wide range of technologies and concepts. I am open to new approaches to continuously expand my skills and stay up to date in the ever-evolving world of web development.",
+    "second-title": "Do you need an additional skill?",
+    "second-text": "Feel free to contact me. I look forward to expanding on my previous knowledge and gaining new experiences.",
+    "button": "Let's talk",
+    "mindset": "I have a  special interest in learning"
+  },
+  "projects": {
+    "title": "Projects",
+    "text": "Discover a selection of my work here and",
+    "text2": "interact with my projects to see my skills in action."
+  },
+    "project-info": {
+      "subtitle": "Task Managment Tool",
+      "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functionality, and assign users and categories.",
+      "subtitle1": "2D Jump and Run Game",
+      "description1": "A jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco sauce to fight against the crazy hen.",
+      "subtitle2": "Social Media App",
+      "description2": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface.",
+      "button": "Next project"
+    },
+    "references": {
+      "title": "What my colleagues say about me",
+      "textbox1": "Marco has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.",
+      "textbox2": "Marco's calm manner helped us to stay focused on the project work. His technical skills were extremely helpful for the success of our projects.",
+      "textbox3": "Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table."
     }
   }
   

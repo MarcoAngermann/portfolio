@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule,TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })
 export class ReferencesComponent {
+  constructor(public translateService: TranslateService) {}
   references = [
-    { title: 'Marco has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.', name: 'Maximilian. L' },
-    { title: 'Marco was a key player in ensuring our project was completed on time. His knowledge and dedication are unparalleled.', name: 'Nafi. M' },
-    { title: 'Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table.', name: 'Lukas. N' }
+    { title: 'references.textbox1', name: 'Maximilian. L' },
+    { title: 'references.textbox2', name: 'Nafi. M' },
+    { title: 'references.textbox3', name: 'Lukas. N' }
   ];
 
   currentIndex = 0;

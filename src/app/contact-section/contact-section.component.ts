@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, CommonModule],
+  imports: [ReactiveFormsModule, HttpClientModule, CommonModule,TranslateModule],
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss']
 })
@@ -15,7 +16,7 @@ export class ContactSectionComponent {
   messageSent: boolean = false;
   errorMessage: string = '';
 
-  constructor(private http: HttpClient, private fb: FormBuilder) {
+  constructor(private http: HttpClient, private fb: FormBuilder,public translateService: TranslateService) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],

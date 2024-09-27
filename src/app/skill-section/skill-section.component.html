@@ -1,17 +1,17 @@
 <section id="skill-section">
     <div class="skill-container">
       <div class="left-container">
-        <h2>Technologies</h2>
+        <h2>{{ 'skills.title' | translate }}</h2>
         <div class="skill-text">
-          <h1>Skill Set</h1>
+          <h1>{{ 'skills.skillset' | translate }}</h1>
           <div class="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>{{ 'skills.text-skillset' | translate }}</p>
           </div>
-          <h2>You need another skill?</h2>
+          <h2>{{ 'skills.second-title' | translate }}</h2>
           <div class="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>{{ 'skills.second-text' | translate }}</p>
           </div>
-          <a href="#contact-section" class="btn"><span class="text">Let's Talk</span></a>
+          <a href="#contact-section" class="btn"><span class="text">{{ 'skills.button' | translate }}</span></a>
         </div>
       </div>
       
@@ -28,7 +28,7 @@
         <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
           <div class="hover-popup" *ngIf="isPopupVisible">
             <div class="mindset-icons">
-              <div><span>I have a special interest in learning</span></div>
+              <div><span>{{ 'skills.mindset' | translate }}</span></div>
               <div class="popup-icons">
                 <div><img src="../../assets/img/php.png" alt=""></div>
                 <div><img src="../../assets/img/react.png" alt=""></div>
