@@ -13,4 +13,12 @@ import { RouterLink } from '@angular/router';
 })
 export class FooterComponent {
 
+  scrollToTop():void{
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
+
 }
