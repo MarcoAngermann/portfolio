@@ -26,7 +26,7 @@
     "text-skillset": "Im Rahmen meiner Weiterbildung im Front- und Backend-Bereich habe ich an verschiedenen Projekten gearbeitet und dabei eine Vielzahl von Technologien und Konzepten eingesetzt. Ich bin offen für neue Ansätze, um meine Fähigkeiten kontinuierlich zu erweitern und in der sich ständig weiterentwickelnden Welt der Webentwicklung immer auf dem neuesten Stand zu bleiben.",
     "second-title": "Sie brauchen eine weitere Fertigkeit?",
     "second-text": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen und neue Erfahrungen zu sammeln.",
-    "button": "Kontaktieren",  
+    "button": "Kontaktieren",
     "mindset": "Ich habe ein besonderes Interesse dies zu Lernen"
   },
   "projects": {
@@ -74,5 +74,40 @@
     "text1": "Ich habe die",
     "text2": "Datenschutzbestimmungen",
     "text3": "gelesen und stimme der Verarbeitung meiner Daten zu."
-}
-}
+  },
+  "imprint": {
+    "title": "Impressum",
+    "subtitle": "Angaben gemäß § 5 TMG",
+    "subtitle2": "Vertreten durch",
+    "contact": "Kontakt"
+  },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "Vielen Dank für Ihr Interesse an unserer Webseite. Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten, wenn Sie unsere Webseite besuchen.",
+      "dataCollectionTitle": "Erhebung und Speicherung personenbezogener Daten",
+      "dataCollectionDescription": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Dazu zählen beispielsweise Name, Adresse, E-Mail-Adresse oder Telefonnummer. Wir erheben, verarbeiten und nutzen personenbezogene Daten nur, wenn Sie uns diese freiwillig zur Verfügung stellen.",
+      "responsibleTitle": "Verantwortlicher",
+      "responsibleDescription": "Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Marco Angermann, Unterm Saley 24, 58840 Plettenberg.",
+      "howDataCollectedTitle": "Wie wir Ihre Daten erheben",
+      "howDataCollectedDescription1": "Wir erheben Ihre Daten durch Ihre aktive Mitteilung, z.B. bei Kontaktformularen oder bei der Registrierung auf unserer Webseite.",
+      "howDataCollectedDescription2": "Zudem werden bei der Nutzung unserer Webseite automatisch Daten erfasst, die zur Gewährleistung der Funktionalität und zur Verbesserung unserer Angebote erforderlich sind.",
+      "dataUsageTitle": "Nutzung Ihrer Daten",
+      "dataUsageDescription": "Wir verwenden Ihre Daten zur Bereitstellung unserer Dienstleistungen, zur Kommunikation mit Ihnen und zur Analyse der Nutzung unserer Webseite. Ihre Daten werden nicht ohne Ihre ausdrückliche Zustimmung an Dritte weitergegeben.",
+      "rightsTitle": "Ihre Rechte",
+      "rightsDescription": "Sie haben das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, das Recht auf Berichtigung, das Recht auf Löschung und das Recht auf Einschränkung der Verarbeitung. Sie können auch der Verarbeitung Ihrer Daten widersprechen.",
+      "hostingTitle": "Hosting und technische Infrastruktur",
+      "hostingProviderInfo": "Unsere Webseite wird von einem externen Anbieter gehostet. Der Hosting-Anbieter erhält Zugriff auf Ihre Daten, um die Webseite zu betreiben.",
+      "hostingProviderLink": "Datenschutzinformationen des Hosting-Anbieters",
+      "generalNoticeTitle": "Allgemeine Hinweise",
+      "generalNoticeDescription": "Bitte beachten Sie, dass Datenübertragungen im Internet Sicherheitslücken aufweisen können. Ein vollständiger Schutz Ihrer Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+      "storageDurationTitle": "Speicherdauer Ihrer Daten",
+      "storageDurationDescription": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.",
+      "legalBasisTitle": "Rechtsgrundlage der Verarbeitung",
+      "legalBasisDescription": "Die Verarbeitung Ihrer Daten erfolgt auf Grundlage Ihrer Einwilligung oder zur Erfüllung eines Vertrages mit Ihnen.",
+      "dataRecipientsTitle": "Empfänger Ihrer Daten",
+      "dataRecipientsDescription": "Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, es sei denn, Sie haben ausdrücklich zugestimmt oder es besteht eine gesetzliche Verpflichtung.",
+      "revocationTitle": "Widerrufsrecht",
+      "revocationDescription": "Sie haben das Recht, Ihre Einwilligung zur Verarbeitung Ihrer Daten jederzeit zu widerrufen. Der Widerruf hat keine Auswirkungen auf die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung."
+    }
+  
+  } 
