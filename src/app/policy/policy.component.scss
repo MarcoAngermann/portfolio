@@ -2,7 +2,7 @@ section {
     background-color: #1c1c1c;
     width: 100vw;
     max-width: 100%;
-    
+    padding-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +10,7 @@ section {
 }
 
 .privacy-policy-container {
+    position: relative;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
@@ -68,8 +69,8 @@ section {
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
-    right: 150px;
-    top: 0px;
+    right: 20px;
+    top: -40px;
     z-index: 999;
   
     img {
