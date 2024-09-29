@@ -34,38 +34,38 @@
     "text": "Discover a selection of my work here and",
     "text2": "interact with my projects to see my skills in action."
   },
-    "project-info": {
-      "subtitle": "Task Managment Tool",
-      "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functionality, and assign users and categories.",
-      "subtitle1": "2D Jump and Run Game",
-      "description1": "A jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco sauce to fight against the crazy hen.",
-      "subtitle2": "Social Media App",
-      "description2": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface.",
-      "button": "Next project"
-    },
-    "references": {
-      "title": "What my colleagues say about me",
-      "textbox1": "Marco has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.",
-      "textbox2": "Marco's calm manner helped us to stay focused on the project work. His technical skills were extremely helpful for the success of our projects.",
-      "textbox3": "Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table."
-    },
-    "contact": {
-      "contact": "Contact",
-      "title": "Let's work",
-      "title1": "together",
-      "title2": "Got a Problem to solve?",
-      "textbox": "Contact me through the form. I am interested in hearing from you,",
-      "textbox1": "knowing your ideas, and contributing to your projects with my work.",
-      "textbox2": "Need a Fullstack developer? Let's talk!",
-      "span": "Let's talk"
-    },
-    "contactform": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "message": "Your Message",
-      "button": "Say Hello ;)"
-    },
-    "placeholder": {
+  "project-info": {
+    "subtitle": "Task Managment Tool",
+    "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functionality, and assign users and categories.",
+    "subtitle1": "2D Jump and Run Game",
+    "description1": "A jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco sauce to fight against the crazy hen.",
+    "subtitle2": "Social Media App",
+    "description2": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface.",
+    "button": "Next project"
+  },
+  "references": {
+    "title": "What my colleagues say about me",
+    "textbox1": "Marco has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.",
+    "textbox2": "Marco's calm manner helped us to stay focused on the project work. His technical skills were extremely helpful for the success of our projects.",
+    "textbox3": "Working with Marco is always a pleasure. He brings fresh ideas and creative solutions to the table."
+  },
+  "contact": {
+    "contact": "Contact",
+    "title": "Let's work",
+    "title1": "together",
+    "title2": "Got a Problem to solve?",
+    "textbox": "Contact me through the form. I am interested in hearing from you,",
+    "textbox1": "knowing your ideas, and contributing to your projects with my work.",
+    "textbox2": "Need a Fullstack developer? Let's talk!",
+    "span": "Let's talk"
+  },
+  "contactform": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "button": "Say Hello ;)"
+  },
+  "placeholder": {
     "name": "Your name goes here",
     "email": "youremail@email.com",
     "message": "Hello Marco, I am interested in..."
@@ -74,6 +74,39 @@
     "text1": "I've read the",
     "text2": "privacy policy",
     "text3": "and agree to the processing of my data as outlined."
-}
+  },
+"imprint": {
+    "title": "Legal Notice",
+    "subtitle": "Information pursuant to § 5 TMG",
+    "subtitle2": "Represented by",
+    "contact": "Contact"
+},
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "Thank you for your interest in our website. Protecting your personal data is very important to us. Below, we inform you about the collection, processing, and use of your personal data when you visit our website.",
+    "dataCollectionTitle": "Collection and Storage of Personal Data",
+    "dataCollectionDescription": "Personal data is any information that relates to an identified or identifiable natural person. This includes, for example, names, addresses, email addresses, or phone numbers. We collect, process, and use personal data only if you voluntarily provide it to us.",
+    "responsibleTitle": "Responsible Party",
+    "responsibleDescription": "The responsible party within the meaning of the General Data Protection Regulation (GDPR) is Marco Angermann, Unterm Saley 24, 58840 Plettenberg.",
+    "howDataCollectedTitle": "How We Collect Your Data",
+    "howDataCollectedDescription1": "We collect your data through your active communication, such as through contact forms or when registering on our website.",
+    "howDataCollectedDescription2": "Additionally, data is automatically collected when you use our website, which is necessary to ensure functionality and improve our offerings.",
+    "dataUsageTitle": "Use of Your Data",
+    "dataUsageDescription": "We use your data to provide our services, communicate with you, and analyze the use of our website. Your data will not be shared with third parties without your explicit consent.",
+    "rightsTitle": "Your Rights",
+    "rightsDescription": "You have the right to request information about your stored personal data, the right to rectification, the right to deletion, and the right to restrict processing. You can also object to the processing of your data.",
+    "hostingTitle": "Hosting and Technical Infrastructure",
+    "hostingProviderInfo": "Our website is hosted by an external provider. The hosting provider has access to your data to operate the website.",
+    "hostingProviderLink": "Privacy information of the hosting provider",
+    "generalNoticeTitle": "General Notices",
+    "generalNoticeDescription": "Please note that data transmissions over the internet can have security vulnerabilities. Complete protection of your data against unauthorized access by third parties is not possible.",
+    "storageDurationTitle": "Storage Duration of Your Data",
+    "storageDurationDescription": "We store your personal data only as long as it is necessary for the purposes mentioned or as required by legal retention obligations.",
+    "legalBasisTitle": "Legal Basis for Processing",
+    "legalBasisDescription": "The processing of your data is based on your consent or the fulfillment of a contract with you.",
+    "dataRecipientsTitle": "Recipients of Your Data",
+    "dataRecipientsDescription": "Your personal data will not be shared with third parties unless you have explicitly consented or there is a legal obligation.",
+    "revocationTitle": "Right of Withdrawal",
+    "revocationDescription": "You have the right to withdraw your consent to the processing of your data at any time. The withdrawal does not affect the lawfulness of the processing that has taken place up to the point of withdrawal."
   }
-  
+}
