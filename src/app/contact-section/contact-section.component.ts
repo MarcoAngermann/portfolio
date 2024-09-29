@@ -52,6 +52,14 @@ export class ContactSectionComponent {
       this.errorMessage = 'Please fill out all fields correctly and ensure the message has at least 10 words.';
     }
   }
+
+  scrollToTop():void{
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
 }
 
 
