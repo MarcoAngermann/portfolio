@@ -28,10 +28,10 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵinject
-} from "./chunk-ESVDCTGN.js";
+} from "./chunk-DBXK2IST.js";
 import {
   __spreadValues
-} from "./chunk-J4B6MK7R.js";
+} from "./chunk-WKYGNSYM.js";
 
 // node_modules/@ngx-translate/core/dist/fesm2022/ngx-translate-core.mjs
 var TranslateLoader = class {

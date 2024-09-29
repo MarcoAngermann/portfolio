@@ -1,4 +1,4 @@
-import "./chunk-J4B6MK7R.js";
+import "./chunk-WKYGNSYM.js";
 
 // node_modules/@ngx-translate/http-loader/dist/fesm2022/ngx-translate-http-loader.mjs
 var TranslateHttpLoader = class {

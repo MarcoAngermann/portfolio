@@ -1,6 +1,6 @@
 <section id="contact-section">
   <div class="contact-container">
-    <div class="left-container">
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="left-container">
       <div class="contact-text">
         <div>
           <h3>{{ 'contact.contact' | translate }}</h3><br>
@@ -16,7 +16,7 @@
         <img src="../../assets/img/arrow.svg" alt="Scroll up">
       </a>
     </div>
-    <div class="right-container">
+    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="right-container">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="contact-formular">
         <div class="top-side">
           <div class="input">

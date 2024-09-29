@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule,TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-skill-section',
@@ -51,6 +53,22 @@ export class SkillSectionComponent {
 
   toggleSkills() {
     this.showFrontend = !this.showFrontend; // Switch between frontend and backend skills
+  }
+
+  scrollToTop():void{
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
+
+  ngAfterViewInit(): void {
+
+    AOS.init({
+      duration: 2000,
+      offset: 0,
+    });
   }
 }
 

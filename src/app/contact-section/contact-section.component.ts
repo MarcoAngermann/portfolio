@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { PolicyComponent } from '../policy/policy.component';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact-section',
@@ -58,6 +60,15 @@ export class ContactSectionComponent {
       top: 0, 
       left: 0, 
       behavior: 'smooth' 
+    });
+  }
+
+  ngAfterViewInit(): void {
+
+    AOS.init({
+      duration: 2000,
+      offset: 0,
+      
     });
   }
 }
