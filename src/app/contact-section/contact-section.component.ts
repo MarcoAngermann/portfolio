@@ -3,11 +3,13 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
+import { PolicyComponent } from '../policy/policy.component';
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, CommonModule,TranslateModule],
+  imports: [ReactiveFormsModule, HttpClientModule, CommonModule,TranslateModule, RouterLink, PolicyComponent],
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss']
 })
