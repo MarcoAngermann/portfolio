@@ -6,17 +6,17 @@
   },
   "welcome": {
     "button": "Projekte",
-    "button2": "Kontakt",
+    "button2":"Kontakt",
     "span1": "Offen für Arbeit",
     "span2": "Wohnort Plettenberg",
-    "span3": "Verfügbar für Homeoffice",
+    "span3": "Nur für Homeoffice verfügbar",
     "span4": "Front & Backend Entwickler"
   },
   "aboutme": {
     "title": "Wer ich bin",
     "aboutme-title": "Über mich",
-    "first-text": "Hallo, mein Name ist Marco und ich bin ein deutschsprachiger Frontend-Entwickler aus Plettenberg. Angetrieben von den unbegrenzten Möglichkeiten der IT, begeistert es mich, visuell ansprechende und intuitive Websites sowie Anwendungen zu entwickeln.",
-    "second-text": "Ich bin flexibel und arbeite sowohl vor Ort in Plettenberg als auch remote effektiv. Dank meiner Anpassungsfähigkeit integriere ich mich problemlos in Teams oder arbeite selbstständig an Projekten, stets mit einer klaren Kommunikation und strukturierten Arbeitsweise.",
+    "first-text": "Hallo, mein Name ist Marco und ich bin ein deutschsprachiger Fullstack-Entwickler aus Plettenberg. Angetrieben von den unbegrenzten Möglichkeiten der IT, begeistert es mich, visuell ansprechende und intuitive Websites sowie Anwendungen zu entwickeln.",
+    "second-text": "Dank meiner Anpassungsfähigkeit integriere ich mich problemlos in Teams oder arbeite selbstständig an Projekten, stets mit einer klaren Kommunikation und strukturierten Arbeitsweise.",
     "third-text": "Ich bin offen für neue Ideen und immer bestrebt, mich persönlich weiterzuentwickeln. Ständig auf der Suche nach spannenden Herausforderungen, sehe ich jede Aufgabe als Chance, mein Wissen und meine Fähigkeiten auf das nächste Level zu bringen.",
     "fourth-text": "In meinem Beruf ist Programmieren nicht nur das Schreiben von Code, sondern eine kreative Art, Probleme zu lösen. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So unterstütze ich Sie dabei, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
   },

@@ -24,7 +24,7 @@ export class HeaderComponent {
   }
 
   get menuIcon() {
-    return this.isMenuOpen ? '../../../assets/img/menuactivate.svg' : '../../../assets/img/menu.png';
+    return this.isMenuOpen ? './assets/img/menuactivate.svg' : './assets/img/menu.png';
   }
 
   toggleLanguage() {

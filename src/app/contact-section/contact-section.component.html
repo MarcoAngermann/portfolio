@@ -1,6 +1,6 @@
 <section id="contact-section">
   <div class="contact-container">
-    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="left-container">
+    <div data-aos="fade-right" class="left-container">
       <div class="contact-text">
         <div>
           <h3>{{ 'contact.contact' | translate }}</h3><br>
@@ -13,32 +13,35 @@
         </div>
       </div>
       <a href="#welcome-area" class="scroll-up">
-        <img src="../../assets/img/arrow.svg" alt="Scroll up">
+        <img src="./assets/img/arrow.svg" alt="Scroll up">
       </a>
     </div>
-    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="right-container">
+    <div data-aos="fade-left" class="right-container">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="contact-formular">
         <div class="top-side">
           <div class="input">
             <label for="name">{{ 'contactform.name' | translate }}</label>
-            <input type="text" id="name" formControlName="name" placeholder="{{'placeholder.name' | translate}}" autocomplete="off" required />
-            <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
-              <small class="error">Please enter your name.</small>
-            </div>
+            <input type="text" id="name" formControlName="name" placeholder="{{'placeholder.name' | translate}}" autocomplete="off" required 
+            (blur)="hideErrorMessage('name')" (input)="clearErrorMessage('name')" />
+          <div class="error-message" *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched && showErrorMessage['name']">
+            <small class="error">Name too short (min. 3 letters).</small>
+          </div>
           </div>
           <div class="input">
             <label for="email">{{'contactform.email' | translate}}</label>
-            <input type="email" id="email" formControlName="email" placeholder="{{'placeholder.email' | translate}}" autocomplete="off" required />
-            <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-              <small class="error">Please enter a valid email.</small>
-            </div>
+            <input type="email" id="email" formControlName="email" placeholder="{{'placeholder.email' | translate}}" autocomplete="off" required
+            (blur)="hideErrorMessage('email')" (input)="clearErrorMessage('email')" />
+          <div class="error-message" *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched && showErrorMessage['email']">
+            <small class="error">Please enter a valid email.</small>
+          </div>
           </div>
           <div class="input">
             <label for="message">{{'contactform.message' | translate}}</label>
-            <textarea id="message" formControlName="message" placeholder="{{'placeholder.message' | translate}}" rows="2" required></textarea>
-            <div *ngIf="contactForm.controls['message'].errors?.['wordCount'] && contactForm.controls['message'].touched">
-              <small class="error">Message must be at least 10 words long.</small>
-            </div>
+            <textarea id="message" formControlName="message" placeholder="{{'placeholder.message' | translate}}" rows="1" required
+            (blur)="hideErrorMessage('message')" (input)="clearErrorMessage('message')" ></textarea>
+          <div class="error-message" *ngIf="contactForm.controls['message'].errors?.['wordCount'] && contactForm.controls['message'].touched && showErrorMessage['message']">
+            <small class="error">Message must be at least 10 words long.</small>
+          </div>
           </div>
         </div>
         <div class="bottom-side">
@@ -53,15 +56,14 @@
           </div>
         </div>
       </form>
-      <div *ngIf="messageSent">
+      <div class="error-message" *ngIf="messageSent">
         <p>Message sent successfully!</p>
       </div>
-      <div *ngIf="errorMessage">
+      <div class="error-message" *ngIf="errorMessage">
         <p class="error">{{ errorMessage }}</p>
       </div>
     </div>
   </div>
 </section>
-
 
 

@@ -28,8 +28,13 @@ section {
     }
 
     .profile-img {
+        width: 568px;
+        height: 568px;
+        border-radius: 32px;
         position: absolute;
         z-index: 5;
+        object-fit: cover;
+        object-position: 0 20%;
     }
 
     .profile-lines {

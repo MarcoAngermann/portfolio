@@ -1,10 +1,11 @@
 section {
+  overflow-y: hidden;
     position: relative;
     z-index: 1;
     display: flex;
     background-color: #1c1c1c;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -136,7 +137,7 @@ section {
   .title {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     color: #ffffff;
     font-family: 'Karla', sans-serif;
   }
