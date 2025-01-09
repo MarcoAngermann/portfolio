@@ -101,8 +101,8 @@ article {
     opacity: 0;
     transition: opacity 0.3s ease;
     background-image: var(--hovered-image);
-}
-
+  }
+  
 .projects:hover::after {
     content: '';
     position: absolute;
