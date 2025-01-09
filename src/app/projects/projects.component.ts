@@ -28,7 +28,7 @@ export class ProjectsComponent {
         { iconUrl: './assets/img/cssgreen.svg' },
         { iconUrl: './assets/img/firebasegreen.svg' }
       ],
-      imageUrl: './assets/img/join-hover.svg',
+      imageUrl: './assets/img/joinbig.png',
       infoUrl: './assets/img/joinbig.png'
     },
     {
@@ -43,12 +43,12 @@ export class ProjectsComponent {
         { iconUrl: './assets/img/cssgreen.svg' },
         { iconUrl: './assets/img/javascriptgreen.svg' }
       ],
-      imageUrl: './assets/img/pollo-hover.svg',
+      imageUrl: './assets/img/elpollobig.png',
       infoUrl: './assets/img/elpollobig.png'
     },
     {
       number: '03',
-      title: 'Videoflix',
+      title: 'DA Bubble',
       githubUrl: 'https://github.com/MarcoAngermann/DA-Bubble',
       livetestUrl: 'https://da-bubble.netlify.app/',
       subtitle: 'project-info.subtitle2',
@@ -60,7 +60,7 @@ export class ProjectsComponent {
         { iconUrl: './assets/img/cssgreen.svg' },
         { iconUrl: './assets/img/firebasegreen.svg' }
       ],
-      imageUrl: './assets/img/bubble-hover.svg',
+      imageUrl: './assets/img/dabubblebig.png',
       infoUrl: './assets/img/dabubblebig.png'
     }
   ];
@@ -85,7 +85,7 @@ export class ProjectsComponent {
       img.onload = () => resolve();
       img.onerror = () => {
         console.error(`Failed to preload image: ${url}`);
-        resolve(); // Resolve to avoid breaking the promise chain
+        resolve(); 
       };
     });
   }
