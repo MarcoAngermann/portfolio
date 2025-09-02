@@ -7,11 +7,10 @@ import AOS from 'aos';
 
 
 @Component({
-  selector: 'app-about-me',
-  standalone: true,
-  imports: [CommonModule,TranslateModule,RouterLink],
-  templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+    selector: 'app-about-me',
+    imports: [CommonModule, TranslateModule, RouterLink],
+    templateUrl: './about-me.component.html',
+    styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
   constructor(public translateService: TranslateService) {}

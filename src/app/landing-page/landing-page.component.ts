@@ -11,10 +11,9 @@ import { ImprintComponent } from '../imprint/imprint.component';
 
 
 @Component({
-  selector: 'app-landing-page',
-  standalone: true,
-  imports: [CommonModule, AboutMeComponent, WelcomeAreaComponent, SkillSectionComponent, ProjectsComponent, ReferencesComponent, ContactSectionComponent, PolicyComponent,ImprintComponent],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+    selector: 'app-landing-page',
+    imports: [CommonModule, AboutMeComponent, WelcomeAreaComponent, SkillSectionComponent, ProjectsComponent, ReferencesComponent, ContactSectionComponent, PolicyComponent, ImprintComponent],
+    templateUrl: './landing-page.component.html',
+    styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {}

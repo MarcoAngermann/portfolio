@@ -8,11 +8,10 @@ import AOS from 'aos';
 
 
 @Component({
-  selector: 'app-contact-section',
-  standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, CommonModule, TranslateModule, RouterLink],
-  templateUrl: './contact-section.component.html',
-  styleUrls: ['./contact-section.component.scss']
+    selector: 'app-contact-section',
+    imports: [ReactiveFormsModule, HttpClientModule, CommonModule, TranslateModule, RouterLink],
+    templateUrl: './contact-section.component.html',
+    styleUrls: ['./contact-section.component.scss']
 })
 export class ContactSectionComponent {
   contactForm: FormGroup;

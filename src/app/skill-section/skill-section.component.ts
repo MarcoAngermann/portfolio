@@ -5,11 +5,10 @@ import AOS from 'aos';
 
 
 @Component({
-  selector: 'app-skill-section',
-  standalone: true,
-  imports: [CommonModule,TranslateModule],
-  templateUrl: './skill-section.component.html',
-  styleUrl: './skill-section.component.scss'
+    selector: 'app-skill-section',
+    imports: [CommonModule, TranslateModule],
+    templateUrl: './skill-section.component.html',
+    styleUrl: './skill-section.component.scss'
 })
 export class SkillSectionComponent {
   showFrontend = true; // Default to showing frontend skills
