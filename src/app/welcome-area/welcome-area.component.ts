@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+    standalone: true,
     selector: 'app-welcome-area',
     imports: [CommonModule, TranslateModule],
     templateUrl: './welcome-area.component.html',

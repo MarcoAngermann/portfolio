@@ -5,6 +5,7 @@ import AOS from 'aos';
 
 
 @Component({
+    standalone: true,
     selector: 'app-skill-section',
     imports: [CommonModule, TranslateModule],
     templateUrl: './skill-section.component.html',

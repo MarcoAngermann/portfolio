@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { TranslateModule,TranslateService } from '@ngx-translate/core';
 
 @Component({
+    standalone: true,
     selector: 'app-references',
     imports: [CommonModule, TranslateModule],
     templateUrl: './references.component.html',

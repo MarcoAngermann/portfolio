@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-projects',
-    imports: [CommonModule, TranslateModule],
-    templateUrl: './projects.component.html',
-    styleUrls: ['./projects.component.scss']
+  selector: 'app-projects',
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
   constructor(public translateService: TranslateService) {
@@ -65,7 +66,7 @@ export class ProjectsComponent {
     {
       number: '04',
       title: 'Videoflix',
-      githubUrl: 'https://github.com/MarcoAngermann/final_group_videoflix_django_backend',
+      githubUrl: 'https://github.com/MarcoAngermann/DA-Bubb',
       livetestUrl: 'https://da-bubble.netlify.app/',
       subtitle: 'project-info.subtitle2',
       description: 'project-info.description2',

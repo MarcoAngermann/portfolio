@@ -8,6 +8,7 @@ import AOS from 'aos';
 
 
 @Component({
+    standalone: true,
     selector: 'app-contact-section',
     imports: [ReactiveFormsModule, HttpClientModule, CommonModule, TranslateModule, RouterLink],
     templateUrl: './contact-section.component.html',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -8,9 +8,11 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 
 
+
 @Component({
+    standalone: true,
     selector: 'app-root',
-    imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, RouterLink],
+    imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

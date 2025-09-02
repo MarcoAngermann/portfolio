@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ImprintComponent } from '../../imprint/imprint.component';
-import { PolicyComponent } from '../../policy/policy.component';
-import { RouterLink } from '@angular/router';
+
+
 
 @Component({
+    standalone: true,
     selector: 'app-footer',
-    imports: [CommonModule, ImprintComponent, PolicyComponent, RouterLink],
+    imports: [CommonModule],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'
 })

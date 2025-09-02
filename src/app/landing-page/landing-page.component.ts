@@ -6,13 +6,13 @@ import { SkillSectionComponent } from '../skill-section/skill-section.component'
 import { ProjectsComponent } from '../projects/projects.component';
 import { ReferencesComponent } from '../references/references.component';
 import { ContactSectionComponent } from '../contact-section/contact-section.component';
-import { PolicyComponent } from "../policy/policy.component";
-import { ImprintComponent } from '../imprint/imprint.component';
+
 
 
 @Component({
+    standalone: true,
     selector: 'app-landing-page',
-    imports: [CommonModule, AboutMeComponent, WelcomeAreaComponent, SkillSectionComponent, ProjectsComponent, ReferencesComponent, ContactSectionComponent, PolicyComponent, ImprintComponent],
+    imports: [CommonModule, AboutMeComponent, WelcomeAreaComponent, SkillSectionComponent, ProjectsComponent, ReferencesComponent, ContactSectionComponent],
     templateUrl: './landing-page.component.html',
     styleUrl: './landing-page.component.scss'
 })
