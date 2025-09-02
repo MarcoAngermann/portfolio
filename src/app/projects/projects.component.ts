@@ -48,8 +48,25 @@ export class ProjectsComponent {
     },
     {
       number: '03',
-      title: 'DA Bubble',
-      githubUrl: 'https://github.com/MarcoAngermann/DA-Bubble',
+      title: 'Pokedex',
+      githubUrl: 'https://github.com/MarcoAngermann/pokedex',
+      livetestUrl: 'https://marco-angermann.developerakademie.net/pokedex/',
+      subtitle: 'project-info.subtitle2',
+      description: 'project-info.description2',
+      technologies: [
+        { iconUrl: './assets/img/angulargreen.svg' },
+        { iconUrl: './assets/img/typescriptgreen.svg' },
+        { iconUrl: './assets/img/htmlgreen.svg' },
+        { iconUrl: './assets/img/cssgreen.svg' },
+        { iconUrl: './assets/img/firebasegreen.svg' }
+      ],
+      imageUrl: './assets/img/dabubblebig.png',
+      infoUrl: './assets/img/dabubblebig.png'
+    },
+    {
+      number: '04',
+      title: 'Videoflix',
+      githubUrl: 'https://github.com/MarcoAngermann/final_group_videoflix_django_backend',
       livetestUrl: 'https://da-bubble.netlify.app/',
       subtitle: 'project-info.subtitle2',
       description: 'project-info.description2',

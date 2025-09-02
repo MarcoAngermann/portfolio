@@ -24,8 +24,8 @@
     (click)="selectProject(projects[1])"
     class="projects projects-img width"
   >
-    <h2>Pollo</h2>
-    <p>Angular <span>|</span> Node.js <span>|</span> MongoDB</p>
+    <h2>El Pollo Loco</h2>
+    <p>HTML <span>|</span> CSS <span>|</span> JavaScript</p>
   </article>
   <div class="seperator"></div>
   <article
@@ -34,10 +34,19 @@
     (click)="selectProject(projects[2])"
     class="projects projects-img width"
   >
-    <h2>DA Bubble / Comming Soon</h2>
-    <p>React <span>|</span> TypeScript <span>|</span> Firebase</p>
+    <h2>Pokedex</h2>
+    <p>JavaScript <span>|</span> HTML <span>|</span> CSS</p>
   </article>
-
+    <div class="seperator"></div>
+    <article
+    (mouseenter)="setHoveredProject(3)"
+    (mouseleave)="clearHoveredProject()"
+    (click)="selectProject(projects[3])"
+    class="projects projects-img width"
+  >
+    <h2>Videoflix</h2>
+    <p>Python <span>|</span> Django DRF <span>|</span> Docker <span>|</span> PostgreSQL</p>
+  </article>
     <div class="seperator"></div>
   </div>
 
