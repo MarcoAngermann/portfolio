@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 @Component({
   selector: 'app-contact-section',

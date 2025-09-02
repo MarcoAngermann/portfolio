@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule,TranslateService } from '@ngx-translate/core';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 @Component({
   selector: 'app-skill-section',

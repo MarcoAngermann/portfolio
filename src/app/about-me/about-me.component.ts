@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 @Component({
