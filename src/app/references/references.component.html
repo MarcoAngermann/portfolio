@@ -4,16 +4,17 @@
   </div>
   <div class="wrapper">
     <div class="carousel">
-      <div class="carousel__item" *ngFor="let reference of repeatedReferences; let i = index"
-        [class.active]="i === currentIndex">
-        <div class="carousel__item-body">
-          <p class="title">{{ reference.title | translate }}</p>
-          <div class="name-line-container">
-            <hr class="line">
-            <span class="name">{{ reference.name }}</span>
+      @for (reference of repeatedReferences; track $index; let i = $index) {
+        <div class="carousel__item" [class.active]="i === currentIndex">
+          <div class="carousel__item-body">
+            <p class="title">{{ reference.title | translate }}</p>
+            <div class="name-line-container">
+              <hr class="line">
+              <span class="name">{{ reference.name }}</span>
+            </div>
           </div>
         </div>
-      </div>
+      }
     </div>
   </div>
 </section>

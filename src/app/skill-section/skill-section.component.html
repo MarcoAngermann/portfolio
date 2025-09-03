@@ -1,32 +1,37 @@
 <section id="skill-section">
-    <div class="skill-container">
-      <div data-aos="fade-right" class="left-container">
-        <h2>{{ 'skills.title' | translate }}</h2>
-        <div class="skill-text">
-          <h1>{{ 'skills.skillset' | translate }}</h1>
-          <div class="text-container">
-            <p>{{ 'skills.text-skillset' | translate }}</p>
-          </div>
-          <h2>{{ 'skills.second-title' | translate }}</h2>
-          <div class="text-container">
-            <p>{{ 'skills.second-text' | translate }}</p>
-          </div>
-          <a href="#contact-section" class="btn"><span class="text">{{ 'skills.button' | translate }}</span></a>
+  <div class="skill-container">
+    <div data-aos="fade-right" class="left-container">
+      <h2>{{ 'skills.title' | translate }}</h2>
+      <div class="skill-text">
+        <h1>{{ 'skills.skillset' | translate }}</h1>
+        <div class="text-container">
+          <p>{{ 'skills.text-skillset' | translate }}</p>
         </div>
+        <h2>{{ 'skills.second-title' | translate }}</h2>
+        <div class="text-container">
+          <p>{{ 'skills.second-text' | translate }}</p>
+        </div>
+        <a href="#contact-section" class="btn">
+          <span class="text">{{ 'skills.button' | translate }}</span>
+        </a>
       </div>
-      
-      <div data-aos="flip-left" class="right-container">
-        <!-- Frontend or Backend skills based on toggle -->
-        <div *ngFor="let skill of showFrontend ? Frontendskills : Backendskills" class="">
+    </div>
+    
+    <div data-aos="flip-left" class="right-container">
+      <!-- Frontend or Backend skills based on toggle -->
+      @for (skill of showFrontend ? Frontendskills : Backendskills; track skill.src) {
+        <div class="">
           <div class="icon-container">
             <img [src]="skill.src" alt="{{ skill.text }}">
             <span>{{ skill.text }}</span>
           </div>
         </div>
-        
-        <!-- Mindset section -->
-        <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
-          <div class="hover-popup" *ngIf="isPopupVisible">
+      }
+      
+      <!-- Mindset section -->
+      <div class="mindset-icon-container" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
+        @if (isPopupVisible) {
+          <div class="hover-popup">
             <div class="mindset-icons">
               <div><span>{{ 'skills.mindset' | translate }}</span></div>
               <div class="popup-icons">
@@ -35,17 +40,18 @@
               </div>
             </div>
           </div>
-          <img src="./assets/img/growthmindset.svg" alt="">
-          <p>Growth Mindset</p>
-        </div>
-        
-        <!-- Skill switch between Frontend and Backend -->
-        <div class="skill-switch-container" (click)="toggleSkills()">
-          <span class="skill-switch" [class.active]="showFrontend">Frontend</span>
-          <span> | </span>
-          <span class="skill-switch" [class.active]="!showFrontend">Backend</span>
-        </div>
+        }
+        <img src="./assets/img/growthmindset.svg" alt="">
+        <p>Growth Mindset</p>
+      </div>
+      
+      <!-- Skill switch between Frontend and Backend -->
+      <div class="skill-switch-container" (click)="toggleSkills()">
+        <span class="skill-switch" [class.active]="showFrontend">Frontend</span>
+        <span> | </span>
+        <span class="skill-switch" [class.active]="!showFrontend">Backend</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   

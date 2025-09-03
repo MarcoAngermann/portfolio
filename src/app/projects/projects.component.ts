@@ -85,6 +85,7 @@ export class ProjectsComponent {
   hoveredImageUrl: string | null = null;
   selectedProject: any = null;
 
+  // ALLE IHRE BESTEHENDEN FUNKTIONEN BLEIBEN UNVERÄNDERT
   async preloadImages(): Promise<void> {
     const preloadPromises = this.projects.flatMap(project => [
       this.preloadSingleImage(project.imageUrl),
@@ -106,7 +107,6 @@ export class ProjectsComponent {
       };
     });
   }
-  
 
   getHoveredImageStyle(): { [key: string]: string } | null {
     return this.hoveredImageUrl ? { '--hovered-image': `url(${this.hoveredImageUrl})` } : null;
@@ -133,6 +133,21 @@ export class ProjectsComponent {
     const currentIndex = this.projects.findIndex(p => p === this.selectedProject);
     const nextIndex = (currentIndex + 1) % this.projects.length;
     this.selectedProject = this.projects[nextIndex];
+  }
+
+  // EINZIGE NEUE FUNKTION - für die dynamische Tech-Anzeige im Template
+  getMainTechnologies(project: any): string[] {
+    // Mapping der Icon-URLs zu Namen für die Anzeige
+    const techMap: { [key: string]: string } = {
+      './assets/img/javascriptgreen.svg': 'JavaScript',
+      './assets/img/htmlgreen.svg': 'HTML',
+      './assets/img/cssgreen.svg': 'CSS',
+      './assets/img/firebasegreen.svg': 'Firebase',
+      './assets/img/angulargreen.svg': 'Angular',
+      './assets/img/typescriptgreen.svg': 'TypeScript'
+    };
+
+    return project.technologies.map((tech: any) => techMap[tech.iconUrl] || 'Unknown');
   }
 }
 

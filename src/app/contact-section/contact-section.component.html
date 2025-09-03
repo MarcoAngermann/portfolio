@@ -16,54 +16,101 @@
         <img src="./assets/img/arrow.svg" alt="Scroll up">
       </a>
     </div>
+    
     <div data-aos="fade-left" class="right-container">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="contact-formular">
         <div class="top-side">
+          <!-- Name Field -->
           <div class="input">
             <label for="name">{{ 'contactform.name' | translate }}</label>
-            <input type="text" id="name" formControlName="name" placeholder="{{'placeholder.name' | translate}}" autocomplete="off" required 
-            (blur)="hideErrorMessage('name')" (input)="clearErrorMessage('name')" />
-          <div class="error-message" *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched && showErrorMessage['name']">
-            <small class="error">Name too short (min. 3 letters).</small>
+            <input 
+              type="text" 
+              id="name" 
+              formControlName="name" 
+              placeholder="{{'placeholder.name' | translate}}" 
+              autocomplete="off" 
+              required
+              (blur)="hideErrorMessage('name')" 
+              (input)="clearErrorMessage('name')" 
+            />
+            @if (contactForm.controls['name'].invalid && contactForm.controls['name'].touched && showErrorMessage['name']) {
+              <div class="error-message">
+                <small class="error">Name too short (min. 3 letters).</small>
+              </div>
+            }
           </div>
-          </div>
+          
+          <!-- Email Field -->
           <div class="input">
             <label for="email">{{'contactform.email' | translate}}</label>
-            <input type="email" id="email" formControlName="email" placeholder="{{'placeholder.email' | translate}}" autocomplete="off" required
-            (blur)="hideErrorMessage('email')" (input)="clearErrorMessage('email')" />
-          <div class="error-message" *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched && showErrorMessage['email']">
-            <small class="error">Please enter a valid email.</small>
+            <input 
+              type="email" 
+              id="email" 
+              formControlName="email" 
+              placeholder="{{'placeholder.email' | translate}}" 
+              autocomplete="off" 
+              required
+              (blur)="hideErrorMessage('email')" 
+              (input)="clearErrorMessage('email')" 
+            />
+            @if (contactForm.controls['email'].invalid && contactForm.controls['email'].touched && showErrorMessage['email']) {
+              <div class="error-message">
+                <small class="error">Please enter a valid email.</small>
+              </div>
+            }
           </div>
-          </div>
+          
+          <!-- Message Field -->
           <div class="input">
             <label for="message">{{'contactform.message' | translate}}</label>
-            <textarea id="message" formControlName="message" placeholder="{{'placeholder.message' | translate}}" rows="1" required
-            (blur)="hideErrorMessage('message')" (input)="clearErrorMessage('message')" ></textarea>
-          <div class="error-message" *ngIf="contactForm.controls['message'].errors?.['wordCount'] && contactForm.controls['message'].touched && showErrorMessage['message']">
-            <small class="error">Message must be at least 10 words long.</small>
-          </div>
+            <textarea 
+              id="message" 
+              formControlName="message" 
+              placeholder="{{'placeholder.message' | translate}}" 
+              rows="1" 
+              required
+              (blur)="hideErrorMessage('message')" 
+              (input)="clearErrorMessage('message')"
+            ></textarea>
+            @if (contactForm.controls['message'].errors?.['wordCount'] && contactForm.controls['message'].touched && showErrorMessage['message']) {
+              <div class="error-message">
+                <small class="error">Message must be at least 10 words long.</small>
+              </div>
+            }
           </div>
         </div>
+        
         <div class="bottom-side">
           <div class="send-contact">
             <input type="checkbox" id="check" class="checkbox" formControlName="agree" autocomplete="off" />
             <label for="check">
-              {{'policy.text1' | translate}} <a (click)="scrollToTop()" routerLink="/policy">{{'policy.text2' | translate}}</a> {{'policy.text3' | translate}}
+              {{'policy.text1' | translate}} 
+              <a (click)="scrollToTop()" routerLink="/policy">{{'policy.text2' | translate}}</a> 
+              {{'policy.text3' | translate}}
             </label>
           </div>
           <div class="btn-container">
-            <button type="submit" [disabled]="contactForm.invalid">{{ 'contactform.button' | translate }}</button>
+            <button type="submit" [disabled]="contactForm.invalid">
+              {{ 'contactform.button' | translate }}
+            </button>
           </div>
         </div>
       </form>
-      <div class="error-message" *ngIf="messageSent">
-        <p>Message sent successfully!</p>
-      </div>
-      <div class="error-message" *ngIf="errorMessage">
-        <p class="error">{{ errorMessage }}</p>
-      </div>
+      
+      <!-- Success Message -->
+      @if (messageSent) {
+        <div class="error-message">
+          <p>Message sent successfully!</p>
+        </div>
+      }
+      
+      <!-- Error Message -->
+      @if (errorMessage) {
+        <div class="error-message">
+          <p class="error">{{ errorMessage }}</p>
+        </div>
+      }
     </div>
   </div>
 </section>
-
 

@@ -28,7 +28,7 @@
     <div class="marquee-container">
         <div class="marquee-content">
             @for(number of [1, 2, 3, 4, 5]; track number){
-            @for (item of items ; track items){
+            @for (item of items ; track item){
             <span class="dot">•</span>
             <span>{{ item | translate }}</span>
             }
