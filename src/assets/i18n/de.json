@@ -30,6 +30,8 @@
     "mindset": "Ich habe ein besonderes Interesse dies zu Lernen"
   },
   "projects": {
+    "frontend-title": "Frontend Projekte",
+    "backend-title": "Backend Projekte",
     "title": "Projekte",
     "text": "Entdecken Sie hier eine Auswahl meiner Arbeiten und interagieren Sie mit meinen Projekten,",
     "text2": "um meine Fähigkeiten in Aktion zu erleben."

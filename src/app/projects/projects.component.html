@@ -3,15 +3,26 @@
     
     <!-- Header Bereich -->
     <header class="projects-title">
-      <h1>{{ 'projects.title' | translate }}</h1>
+      <h1>{{ currentProjectsTitle | translate }}</h1>
       <p>{{ 'projects.text' | translate }}</p>
       <p>{{ 'projects.text2' | translate }}</p>
     </header>
-    
-    <div class="seperator"></div>
 
-    <!-- Projekt Liste -->
-    @for (project of projects; track project.number; let i = $index) {
+    <!-- Switch Bereich -->
+    <div class="project-switch-container">
+      <span class="project-switch" [class.active]="isShowingFrontend" (click)="switchToFrontend()">
+        {{ 'projects.frontend-title' | translate }}
+      </span>
+      <span> | </span>
+      <span class="project-switch" [class.active]="!isShowingFrontend" (click)="switchToBackend()">
+        {{ 'projects.backend-title' | translate }}
+      </span>
+    </div>
+
+    <div class="seperator"></div>
+    
+    <!-- Projekt Liste - verwendet jetzt currentProjects getter -->
+    @for (project of currentProjects; track project.number; let i = $index) {
       <article
         (mouseenter)="setHoveredProject(i)"
         (mouseleave)="clearHoveredProject()"
@@ -33,12 +44,11 @@
         <div class="seperator"></div>
       }
     }
-     <div class="seperator"></div>
+    
+    <div class="seperator"></div>
   </div>
 
- 
-
-  <!-- Modal/Overlay -->
+  <!-- Modal/Overlay - bleibt unverändert -->
   @if (selectedProject) {
     <div class="overlay">
       <div data-aos="zoom-in" class="project-info">
@@ -79,6 +89,5 @@
     </div>
   }
 </section>
-
 
 
